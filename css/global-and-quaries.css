@@ -1,0 +1,96 @@
+/* --------------------------- Global  Styles --------------------------- */
+:root {
+    --light-brown: #a47343;
+    --dark-brown: #6f4323;
+    --black-brown: #38241d;
+    --light-gray: #f4f4f4;
+    --paragraph: 'Roboto', sans-serif;
+    --titles: 'Cormorant Garamont', serif;
+    /* box shadows will be black with 85% brightness */
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body a {
+    text-decoration: none;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    position: sticky;
+    z-index: 100;
+}
+
+#header-container {
+    border-bottom: 1px solid var(--dark-brown);
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.logo-m, .logo-d {
+    display: block;
+    margin: 5px auto;
+    padding-bottom: 5px;
+    
+}
+
+
+
+
+
+/* --------------------------- Mobile  Styles --------------------------- */
+@media only screen and (max-width:1094px) {
+
+/* No Show 
+------------------------------- */
+.logo-d {
+    display: none;
+}
+
+.search-icon, .mobile-menu {
+    margin-bottom: 5px;
+}
+
+/* .custom-burger-button div {
+    width: 35px;
+    height: 4px;
+    background-color: var(--dark-brown);
+    margin: 5px;
+} */
+
+
+
+
+}
+
+
+/* --------------------------- Tablet Styles --------------------------- 
+@media only screen and (min-width:481px) and (max-width:768px) {
+
+
+}
+*/
+
+
+
+/* --------------------------- Desktop Styles --------------------------- */
+@media only screen and (min-width:1095px) {
+
+/* No Show 
+------------------------------- */
+.logo-m {
+    display: none;
+}
+
+.search-icon, .mobile-menu {
+    display: none;
+}
+
+}
