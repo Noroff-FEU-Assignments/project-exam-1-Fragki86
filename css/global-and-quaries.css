@@ -55,35 +55,40 @@ header {
 
 .search-icon, .mobile-menu {
     margin-bottom: 5px;
+    cursor: pointer;
 }
 
 
 /* NAV 
 ------------------------------- */
 nav {
-    position: absolute;
     width: 100%;
-    right: 0px;
-    background-color:var(--light-gray);
     animation-name: fade-in;
     z-index: 100;
 }
 
 .nav-links {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-left: 0px;
-
+    margin-top: 0px;
     width: 100%;
-    height: 750px;
+    height: 790px;
     justify-content: space-evenly;
-    /* margin-block-start: 0em;
-    margin-block-end: 0em; */
+    background-color:var(--light-gray);
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+}
+
+.nav-visible {
+    transform: translateX(0%);
 }
 
 .nav-links li {
     list-style: none;    
+    opacity: 0;
 }
 
 .nav-links a {
