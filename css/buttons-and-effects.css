@@ -1,0 +1,7 @@
+/* Mobile Menu animation
+------------------------------- */
+
+@keyframes fade-in {
+    0% {right: -100%;}
+    100% {right: 0%;}
+}
