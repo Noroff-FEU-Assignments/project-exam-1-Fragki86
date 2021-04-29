@@ -15,20 +15,8 @@ function stylishLinks() {
         if (links.style.animation) {
             links.style.animation = '';
         } else {
-            links.style.animation = `fade-in 0.5s forwards  ${length / 7 + 0.6}s`
+            links.style.animation = `fade-in 0.4s forwards  ${length / 7 + 0.6}s`
         }
 
     })
 } 
-
-// const navSlide = () => {
-//     const burgerBtn = document.querySelector(".mobile-menu");
-//     const navMobile = document.querySelector(".nav-links");
-
-//     burgerBtn.addEventListener ("click", () => {
-//         navMobile.classList.toggle("nav-visible");
-//     });
-
-
-// }
-// navSlide()
