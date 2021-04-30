@@ -19,10 +19,10 @@
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="index.html" class="current">Home</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html" class="current">HOME</a></li>
+                <li><a href="recipes.html">RECIPES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
             </ul>
             <!-- <div class="custom-burger-button">
                 <div class="line1"></div>
@@ -32,8 +32,62 @@
         </nav>
     </header>
     <main>
-        
+        <section id="latestRecipes">
+            <h2>Latest recipes</h2>
+            <div class="carousel-container">
+                <div id="rec-1" class="slide">
+                    <div class="img-container"><img src="images/lamb kleftiko.jpg" alt="food"></div>
+                    <div class="text-container"></div>
+                </div>
+                <div id="rec-2" class="slide">
+                    <div class="img-container"><img src="images/Cod in tomato sauce.jpg" alt="food"></div>
+                    <div class="text-container"></div>
+                </div>
+                <div id="rec-3" class="slide">
+                    <div class="img-container"><img src="images/Aubergines papoutsakia.jpg" alt="food"></div>
+                    <div class="text-container"></div>
+                </div>
+                <div class="carousel-buttons">
+                    <button id="btn-prev" aria-label="previous recipe"><</button>
+                    <button id="btn-next" aria-label="next recipe">></button>
+                </div>
+            </div>
+        </section>
+        <section id="ourFavorites">
+            <h2>Our favorites</h2>
+        </section>
+        <section id="dailyTips">
+            <h2>Daily tips</h2>
+            <h3>Tip 1</h3>
+            <h3>Tip 2</h3>
+            <h3>Tip 3</h3>
+        </section>
+        <section id="didYouKnow">
+            <h2>Did you know?</h2>
+        </section>
     </main>
+    <footer>
+        <div class="footer-container">
+            <img src="images/Logo-footer-mobile.png">
+            <h4 class="h4-foot">LET'S BE FRIENDS</h4>
+            <div class="social-media">
+                <img src="images/Icon-pinterest.png" alt="pinterest icon">
+                <img src="images/Icon-facebook.png" alt="facebook icon">
+                <img src="images/Icon-youtube.png" alt="youtube icon">
+                <img src="images/Icon-instagram.png" alt="instagram icon">
+            </div>
+            <h4 class="h4-foot-form">Weekly newsletter</h4>
+            <div class="footer-form">
+                <form method="POST">
+                    <label for="email">
+                    <input type="email" name="email" placeholder="Email">
+                    </label>
+                    <button type="submit" class="sign-up-button" aria-label="press to submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <p>© 2021 EASY MEALS INC., BY GEORGIOS FRAGKIAS</p>
+    </footer>
     <script src="js/nav-mobile.js"></script>
 </body>
 </html>

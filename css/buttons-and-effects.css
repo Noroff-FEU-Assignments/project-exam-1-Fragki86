@@ -8,3 +8,23 @@
     100% {opacity: 1;
         transform: translateX(0px);}
 }
+
+
+/* Buttons
+------------------------------- */
+.sign-up-button {
+    background-color: var(--dark-brown);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    height: 30px;
+    width: 80px;
+    font-family: var(--titles);
+    font-weight: 500;
+    box-shadow: 0px 0px 5px 2px black ;
+}
+
+.sign-up-button:hover {
+    box-shadow: 0px 0px 5px inset ;
+    cursor: pointer;
+}
