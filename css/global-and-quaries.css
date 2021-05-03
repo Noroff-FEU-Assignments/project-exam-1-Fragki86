@@ -35,6 +35,12 @@ header {
     align-items: flex-end;
 }
 
+footer {
+    width: 100%;
+    background-color: var(--light-gray);
+    margin-top: 150px;
+}
+
 .logo-m, .logo-d {
     display: block;
     margin: 5px auto;
@@ -42,6 +48,21 @@ header {
     padding-left: 9px;
 }
 
+
+.section-with-separator {
+    background-color: var(--light-gray);
+
+}
+
+
+h1 {
+    font-family: var(--titles);
+    color: var(--dark-brown);
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-align: center;
+    text-decoration: underline 1px;
+}
 
 h2 {
     font-family: var(--titles);
@@ -199,10 +220,7 @@ nav {
 
 /* Footer 
 ------------------------------- */
-footer {
-    width: 100%;
-    background-color: var(--light-gray);
-}
+
 
 .footer-container {
     width: 80%;
@@ -264,6 +282,40 @@ footer p {
     color: var(--dark-brown);
     font-weight: 600;
     font-size: 0.8rem;
+}
+
+
+/* Recipes 
+------------------------------- */
+.recipes-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0px auto;
+    gap: 25px;
+}
+
+.individual-container {
+    border: 1px solid var(--black-brown);
+}
+
+.individual-container h2{
+    margin: 15px auto;
+}
+
+.rendered-img {
+    width: 100%;
+}
+
+.cooking-info {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid var(--black-brown)
+}
+
+.cooking-info div {
+    display: flex;
+    align-items: center;
 }
 
 }
