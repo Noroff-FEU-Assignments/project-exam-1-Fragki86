@@ -258,13 +258,14 @@ nav {
     grid-row: 1;
     font-family: var(--titles);
     color: var(--dark-brown);
-    text-align: center;
+    text-align: right;
     align-self: end;
     margin-bottom: 0px;
+    padding-right: 50px;
 }
 
 .footer-form {
-    justify-self: center;
+    justify-self: end;
     margin-top: 10px;
 }
 
@@ -287,44 +288,36 @@ footer p {
 
 /* Recipes Page
 ------------------------------- */
+
 .recipes-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: auto;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
     width: 80%;
     margin: 0px auto;
-    gap: 25px;
+    gap: 30px;
 }
 
 .individual-container {
+    display: flex;
+    flex-direction: column;
     border: 1px solid var(--black-brown);
-    display: grid;
-    grid-template-rows: 55% 30% 15%;
+    box-shadow: 0px 0px 3px var(--dark-brown);
 }
 
 .individual-container:hover {
-    box-shadow: 0px 0px 10px var(--dark-brown);
-}
-
-.individual-container h2{
-    margin: 15px auto;
-    grid-row: 1;
+    box-shadow: 0px 0px 25px var(--black-brown);
 }
 
 .rendered-img {
     width: 100%;
-    grid-row: 2;
-    border-bottom: 1px solid var(--dark-brown);
-    border-top: 1px solid var(--dark-brown);
-    object-fit: cover;
-    max-height: 100%;
+    
 }
 
 .cooking-info {
     display: flex;
     justify-content: space-around;
     border-top: 1px solid var(--black-brown);
-    grid-row: 3;
 }
 
 .cooking-info div {
@@ -336,6 +329,7 @@ footer p {
     font-family: var(--paragraph);
     color: var(--black-brown);
     padding-left: 5px;
+    font-size: 1.1rem;
 }
 
 }

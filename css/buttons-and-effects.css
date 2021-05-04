@@ -12,19 +12,36 @@
 
 /* Buttons
 ------------------------------- */
-.sign-up-button {
-    background-color: var(--dark-brown);
-    color: white;
-    border-radius: 50px;
+.btn-style {
+    margin: 40px auto;
+    width: 15%;
+    height: 40px;
+    display: block;
     border: none;
-    height: 30px;
-    width: 80px;
+    border-radius: 50px;
     font-family: var(--titles);
+    font-size: 1.5rem;
     font-weight: 500;
+    color: white;
+    background-color: var(--dark-brown);
+    cursor: pointer;
     box-shadow: 0px 0px 5px 2px black ;
 }
 
-.sign-up-button:hover {
-    box-shadow: 0px 0px 5px inset ;
-    cursor: pointer;
+.btn-style:hover {
+    background-color: white;
+    color: var(--dark-brown);
+    border: 1px solid var(--dark-brown);
 }
+
+
+
+#sign-up-button {
+    height: 30px;
+    width: 70px;
+    font-size: 0.8rem;
+    margin: 15px auto 0px auto;
+}
+
+
+
