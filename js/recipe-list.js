@@ -11,8 +11,9 @@ async function getRecipes() {
             recipeContainer.innerHTML  +=`
                                         <div class="individual-container">
                                             <a href="recipe-details">
-                                            <img class="rendered-img" src=${recipeInfo.recipe.image_url}>
                                             <h2>${recipeInfo.recipe.name}</h2>
+                                            <img class="rendered-img" src=${recipeInfo.recipe.image_url}>
+                                            
                                             </a>
                                             <div class="cooking-info">
                                                 <div class="cook-time">
@@ -24,6 +25,7 @@ async function getRecipes() {
                                                 <div class="portions">
                                                     <img src="images/Icon-spoon-fork.png"><p>${recipeInfo.recipe.servings}</p>
                                                 </div>
+                                            </div>
                                         </div>` 
         })
         
