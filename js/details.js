@@ -1,4 +1,5 @@
 const detailsContainer = document.querySelector(".details-container");
+const methodContainer = document.querySelector(".related");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 
@@ -10,22 +11,8 @@ async function getDetails() {
     try {
         const response = await fetch(recipeDetailsURL);
         const details = await response.json();
-        
-        let method = details.recipe.instructions_flat;
-        console.log(method)
 
-        // for (let i = 0; i < method.length; i++) {
-        //     console.log(method);
-        // }
-
-
-
-
-
-
-
-
-
+        console.log(details)
         allDetails(details);
     } catch(error) {
         console.log("ERROR")
@@ -36,21 +23,44 @@ getDetails();
 
 
 function allDetails(details) {
+    let methodDetails = details.recipe.instructions_flat;
+    let ingredientsList = details.recipe.ingredients_flat;
+    
+    let method = "";
+    let ingredients = "";
+
+    for (let i = 0; i < methodDetails.length; i++) {
+        method += methodDetails[i].text;
+    }
+    console.log(method);
+
+    for (let v = 0; v < ingredientsList.length; v++) {
+        ingredients += "<table class='ingredients-table'>" + "<tr>" + "<td>" + ingredientsList[v].amount + " " + ingredientsList[v].unit + "</td>" +  " " + "<td>" + ingredientsList[v].name + " " + ingredientsList[v].notes + "</td>" + "</tr>" + "</table";
+        
+        console.log(ingredientsList[v]);
+    }
+
+    console.log(ingredients);
+
         detailsContainer.innerHTML = `
                 <div class="recipe-details-container">
                     <h1>${details.recipe.name}</h1>
                     <div class="img-info-grid">
-                        
+                        <div class="img-details"><img src="${details.recipe.image_url}"></div>
                         <h2>- Info -</h2>
                         <div class="recipe-info">
                             ${details.recipe.summary}
                         </div>
                     </div>
                     <div class="method-ingre-grid">
-                        <h2>- Method -</h2>
                         <div class="method">
-                            ${details.recipe.instructions_flat[0].text}
-
+                            <h2>- Method -</h2>
+                            <ul>${method}</ul>
                         </div>
-                </div>`
+                        <div class="ingredients">
+                            <h2>- Ingredients -</h2>
+                            ${ingredients}
+                        </div>
+                </div>`    
+           
 }
