@@ -8,10 +8,10 @@ async function getRecipes() {
         const response = await fetch(callAPI);
         const recipes = await response.json();
         recipeContainer.innerHTML = "";
-
+        
         recipes.forEach(function(recipeInfo) {
             recipeContainer.innerHTML  +=`
-                                        <a href="recipe-details.html">
+                                        <a href="recipe-details.html?id=${recipeInfo.id}">
                                         <div class="individual-container">
                                             <div class="ind-img">
                                                 <img class="rendered-img" src=${recipeInfo.recipe.image_url}>
@@ -43,8 +43,8 @@ async function getRecipes() {
 getRecipes();
 
 
-// showMoreBtn.addEventListener("click", showMoreRecipes);
+showMoreBtn.addEventListener("click", showMoreRecipes);
 
-// function showMoreRecipes() {
-//     console.log("kkk")
-// }
+function showMoreRecipes() {
+    console.log("kkk")
+}
