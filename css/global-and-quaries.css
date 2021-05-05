@@ -72,7 +72,10 @@ h2 {
     text-align: center;
 }
 
-
+p {
+    font-family: var(--paragraph);
+    color: var(--dark-brown);
+}
 
 /* --------------------------- Mobile  Styles --------------------------- */
 @media only screen and (max-width:1094px) {
@@ -338,11 +341,73 @@ footer p {
 
 /* Details Page
 ------------------------------- */
+.img-info-grid {
+    margin: 0px auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 10% 90%;
+    
+}
 
+.img-info-grid h2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.img-details img{
+    grid-column: 1;
+    width: 100%;
+}
+
+.recipe-info {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0px 20px;
+    border-bottom: 1px solid;
+}
+
+.recipe-info .cooking-info {
+    border: none;
+    padding-top: 20px;
+}
+
+
+
+.method-ingre-grid {
+    width: 80%;
+    margin: 5px auto;
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+.method {
+    border-right: 1px solid var(--dark-brown);
+    padding: 50px 0px;
+}
+
+#good-luck {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#good-luck p {
+    font-style: italic;
+    font-family: var(--titles);
+    font-size: 1.5rem;
+}
+
+.ingredients {
+    margin: 0px auto;
+    padding-top: 50px;
+}
 
 .ingredients-table td{
-    border: 1px solid black;
-    margin-right: 0px;
+    font-family: var(--paragraph);
+    color: var(--black-brown);
 
 }
+
+
 }

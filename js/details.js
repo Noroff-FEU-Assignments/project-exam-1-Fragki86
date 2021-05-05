@@ -50,12 +50,26 @@ function allDetails(details) {
                         <h2>- Info -</h2>
                         <div class="recipe-info">
                             ${details.recipe.summary}
+                            <div class="cooking-info">
+                                <div class="cook-time">
+                                    <img src="images/Icon-stopwatch.png"><p>${details.recipe.total_time}'<p>
+                                </div>
+                                <div class="difficulty">
+                                    <img src="images/Icon-chef.png"><p>${details.recipe.custom_time_label}</p>
+                                </div>
+                                <div class="portions">
+                                    <img src="images/Icon-spoon-fork.png"><p>${details.recipe.servings}</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="method-ingre-grid">
                         <div class="method">
                             <h2>- Method -</h2>
                             <ul>${method}</ul>
+                            <div id="good-luck">
+                                <img src="images/star.png"><p>Good Luck</p><img src="images/star.png">
+                            </div>
                         </div>
                         <div class="ingredients">
                             <h2>- Ingredients -</h2>
