@@ -1,5 +1,5 @@
 const detailsContainer = document.querySelector(".details-container");
-const methodContainer = document.querySelector(".related");
+const relatedRecipes = document.querySelector(".related");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 
@@ -32,21 +32,21 @@ function allDetails(details) {
     for (let i = 0; i < methodDetails.length; i++) {
         method += methodDetails[i].text;
     }
-    console.log(method);
+    // console.log(method);
 
     for (let v = 0; v < ingredientsList.length; v++) {
-        ingredients += "<table class='ingredients-table'>" + "<tr>" + "<td>" + ingredientsList[v].amount + " " + ingredientsList[v].unit + "</td>" +  " " + "<td>" + ingredientsList[v].name + " " + ingredientsList[v].notes + "</td>" + "</tr>" + "</table";
+        ingredients += "<table class='ingredients-table'>" + "<tr>" + "<td>" + ingredientsList[v].amount + " " + ingredientsList[v].unit + "</td>" + "<td>" + ingredientsList[v].name + " " + ingredientsList[v].notes + "</td>" + "</tr>" + "</table";
         
-        console.log(ingredientsList[v]);
+        // console.log(ingredientsList[v]);
     }
 
-    console.log(ingredients);
+    // console.log(ingredients);
 
         detailsContainer.innerHTML = `
                 <div class="recipe-details-container">
                     <h1>${details.recipe.name}</h1>
                     <div class="img-info-grid">
-                        <div class="img-details"><img src="${details.recipe.image_url}"></div>
+                        <img src="${details.recipe.image_url}">
                         <h2>- Info -</h2>
                         <div class="recipe-info">
                             ${details.recipe.summary}

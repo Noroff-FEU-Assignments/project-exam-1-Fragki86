@@ -13,9 +13,10 @@
     <header>
         <div id="header-container">
             <img src="images/Icon-search.png" class="search-icon">
-            <img src="images/Logo-mobile.png" class="logo-m">
-            <img src="images/Logo-desktop.png" class="logo-d">
-            
+            <a href="index.html" class="logos">
+                <img src="images/Logo-mobile.png" class="logo-m">
+                <img src="images/Logo-desktop.png" class="logo-d">
+            </a>            
             <img src="images/Icon-menu.png" class="mobile-menu">
         </div>
         <nav>
@@ -37,7 +38,16 @@
         <section id="latestRecipes">
             <h2>Latest recipes</h2>
             <div class="carousel-container">
-                <div id="rec-1" class="slide">
+                <div class="par">
+                    <img src="images/lamb kleftiko.jpg">
+                    <div class="sub">
+                        <div class="info">
+                            <h2>Kleftiko</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, atque? Inventore, quaerat quasi? Natus, veritatis quos esse autem animi expedita voluptates, voluptatum neque, sed nemo consequatur repellat deleniti. Vel, velit.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div id="rec-1" class="slide">
                     <div class="img-container"><img src="images/lamb kleftiko.jpg" alt="food"></div>
                     <div class="text-container"></div>
                 </div>
@@ -52,7 +62,7 @@
                 <div class="carousel-buttons">
                     <button id="btn-prev" aria-label="previous recipe"><</button>
                     <button id="btn-next" aria-label="next recipe">></button>
-                </div>
+                </div> -->
             </div>
         </section>
         <section id="ourFavorites" class="section-with-separator">
@@ -61,11 +71,47 @@
         </section>
         <section id="dailyTips">
             <h2>Daily tips</h2>
-            <div class="cooking-tips"></div>
+            <div class="cooking-tips">
+                <div>
+                    <h3>Tip 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quo quia enim molestias quidem magnam quod repellendus, quam quos alias blanditiis veritatis illum voluptas harum saepe culpa. Nam, laborum dolore.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus eum inventore dolorem possimus exercitationem et quia consequuntur magni voluptatem distinctio, cumque perferendis itaque architecto officiis eveniet, doloribus aspernatur quis.</p>
+                </div>
+                <div>
+                    <h3>Tip 2</h3> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quo quia enim molestias quidem magnam quod repellendus, quam quos alias blanditiis veritatis illum voluptas harum saepe culpa. Nam, laborum dolore.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus eum inventore dolorem possimus exercitationem et quia consequuntur magni voluptatem distinctio, cumque perferendis itaque architecto officiis eveniet, doloribus aspernatur quis.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo odit iure molestiae at voluptatibus perferendis impedit vel reiciendis corrupti quis dolorum suscipit sint, rem placeat asperiores? Itaque ea distinctio architecto!</p>
+                </div>
+                <div>
+                    <h3>Tip 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quo quia enim molestias quidem magnam quod repellendus, quam quos alias blanditiis veritatis illum voluptas harum saepe culpa. Nam, laborum dolore.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus eum inventore dolorem possimus exercitationem et quia consequuntur magni voluptatem distinctio, cumque perferendis itaque architecto officiis eveniet, doloribus aspernatur quis.</p>
+                </div>
+            </div>
         </section>
         <section id="didYouKnow" class="section-with-separator">
             <h2>Did you know?</h2>
-            <div class="wonderings"></div>
+            <div class="wonderings">
+                <div>
+                    <img src="images/pasta_shapes.png" alt="different shapes/types of pasta">
+                    <h3>Which flour to use for homemade pasta?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil hic et ut autem. Quo officiis aliquid fugiat ex minima maxime culpa perferendis! Sit blanditiis consectetur expedita eum dolorem sed quam?</p>
+                </div>
+                <div>
+                    <img src="images/vegetables.png" alt="variety of vegetables spread on a table">
+                    <h3>Top-5 vegetables</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil hic et ut autem. Quo officiis aliquid fugiat ex minima maxime culpa perferendis! Sit blanditiis consectetur expedita eum dolorem sed quam?</p>
+                </div>
+                <div>
+                    <img src="images/steaks.png" alt="steaks">
+                    <h3>How to recognise the best meat</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil hic et ut autem. Quo officiis aliquid fugiat ex minima maxime culpa perferendis! Sit blanditiis consectetur expedita eum dolorem sed quam?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellat recusandae, ex obcaecati quasi nostrum officia, incidunt sit praesentium atque quis, ducimus adipisci harum esse tenetur eum architecto aliquid! Fugiat!
+                    </p>
+                </div>
+
+            </div>
         </section>
     </main>
     <!-- Footer -->
@@ -85,12 +131,13 @@
                     <label for="email">
                     <input type="email" name="email" placeholder="Email">
                     </label>
-                    <button type="submit" class="sign-up-button" aria-label="press to submit">Sign Up</button>
+                    <button type="submit" class="btn-style" id="sign-up-button" aria-label="press to submit">Sign Up</button>
                 </form>
             </div>
         </div>
         <p>© 2021 EASY MEALS INC., BY GEORGIOS FRAGKIAS</p>
     </footer>
     <script src="js/nav-mobile.js"></script>
+    <script src="js/our-favorites.js"></script>
 </body>
 </html>

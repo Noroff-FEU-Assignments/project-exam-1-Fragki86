@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="A blog that provides easy and simple daily recipes"/>
+    <meta name="description" content="Contact form for communication"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" />
-    <title>Easy Meals Home</title>
+    <title>Contact</title>
 </head>
 <body>
     <!-- Header -->
     <header>
         <div id="header-container">
             <img src="images/Icon-search.png" class="search-icon">
-            <img src="images/Logo-mobile.png" class="logo-m">
-            <img src="images/Logo-desktop.png" class="logo-d">
-            
+            <a href="index.html" class="logos">
+                <img src="images/Logo-mobile.png" class="logo-m">
+                <img src="images/Logo-desktop.png" class="logo-d">
+            </a>            
             <img src="images/Icon-menu.png" class="mobile-menu">
         </div>
         <nav>
@@ -34,7 +35,41 @@
     </header>
     <!-- Main -->
     <main>
-        
+        <h1>Contact</h1>
+        <div id="success-message">
+            <p>Thank you for your message! We will respond the sooner we can!</p>
+            <img src="images/Icon-check-circle.png">
+        </div>
+        <div class="contact">
+            <form id="contact-form" method="POST">
+                <div>
+                    <label>Name <span>(min. 5 characters)</span>
+                        <input type="text" name="name" id="name">
+                    </label>
+                    <div class="form-error" id="nameError">The name should be at least 5 letters</div>
+                </div>
+                <div>
+                    <label>Email
+                        <input type="email" name="email" id="email">
+                    </label>
+                    <div class="form-error" id="emailError">Please insert a valid email</div>
+                </div>
+                <div>
+                    <label>Subject <span>(min. 15 characters)</span>
+                        <input type="text" name="subject" id="subject">
+                    </label>
+                    <div class="form-error" id="subjectError">The subject must be at least 15 charactes long</div>
+                </div>
+                <div>
+                    <label>Message Content <span>(min. 25 characters)</span>
+                        <textarea type="text" name="content" id="content"></textarea>
+                    </label>
+                    <div class="form-error" id="contentError">Your message should be at least 25 characters long</div>
+                </div>
+                <button type="submit" class="btn-style" id="submit-button">Send</button>
+            </form>
+
+        </div>
     </main>
     <!-- Footer -->
     <footer>
@@ -53,12 +88,13 @@
                     <label for="email">
                     <input type="email" name="email" placeholder="Email">
                     </label>
-                    <button type="submit" class="sign-up-button" aria-label="press to submit">Sign Up</button>
+                    <button type="submit" class="btn-style" id="sign-up-button" aria-label="press to submit">Sign Up</button>
                 </form>
             </div>
         </div>
         <p>© 2021 EASY MEALS INC., BY GEORGIOS FRAGKIAS</p>
     </footer>
     <script src="js/nav-mobile.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>

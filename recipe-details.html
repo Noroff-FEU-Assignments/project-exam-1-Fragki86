@@ -13,9 +13,10 @@
     <header>
         <div id="header-container">
             <img src="images/Icon-search.png" class="search-icon">
-            <img src="images/Logo-mobile.png" class="logo-m">
-            <img src="images/Logo-desktop.png" class="logo-d">
-            
+            <a href="index.html" class="logos">
+                <img src="images/Logo-mobile.png" class="logo-m">
+                <img src="images/Logo-desktop.png" class="logo-d">
+            </a>            
             <img src="images/Icon-menu.png" class="mobile-menu">
         </div>
         <nav>
@@ -35,7 +36,9 @@
     <!-- Main -->
     <main>
         <div class="details-container"></div>
-        <div class="section-with-separator" id="related"><h2>Related</h2></div>
+        <div class="section-with-separator" id="related"><h2>Have you tried these?</h2>
+        <div class="related-courses"></div>
+        </div>
         <div class="comment-section"></div>
     </main>
     <!-- Footer -->
@@ -55,7 +58,7 @@
                     <label for="email">
                     <input type="email" name="email" placeholder="Email">
                     </label>
-                    <button type="submit" class="sign-up-button" aria-label="press to submit">Sign Up</button>
+                    <button type="submit" class="btn-style" id="sign-up-button" aria-label="press to submit">Sign Up</button>
                 </form>
             </div>
         </div>
@@ -63,5 +66,6 @@
     </footer>
     <script src="js/nav-mobile.js"></script>
     <script src="js/details.js"></script>
+    <script src="js/related.js"></script>
 </body>
 </html>
