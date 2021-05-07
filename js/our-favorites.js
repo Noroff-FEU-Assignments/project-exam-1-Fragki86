@@ -8,8 +8,6 @@ async function getFavorite() {
         const recipesExtra = await response.json();
         console.log(recipesExtra)
         favoriteRecipesContainer.innerHTML = "";
-        
-        // for (let i = 0; i < )
 
 
         recipesExtra.forEach(function(recipeInfo) {
