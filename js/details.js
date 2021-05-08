@@ -3,8 +3,9 @@ const relatedRecipes = document.querySelector(".related");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 
-const id = params.get("id");
 
+/* ----------------- API call ----------------- */
+const id = params.get("id");
 const recipeDetailsURL = "http://easy-meals-recipes.georgiosf.no/wp-json/wp/v2/wprm_recipe/" + id ;
 
 async function getDetails() {
@@ -12,16 +13,31 @@ async function getDetails() {
         const response = await fetch(recipeDetailsURL);
         const details = await response.json();
 
-        console.log(details)
-        allDetails(details);
+        // console.log(details)
+        allDetails(details)
+
+
+
     } catch(error) {
         console.log("ERROR")
     }
 }
+getDetails().then(() => {
 
-getDetails();
+/* ----------------- Making the img bigger ----------------- */
+    const imgBig = document.querySelector(".img-info-grid img")
 
 
+    imgBig.addEventListener("click", zoomImg);
+    function zoomImg() {
+        console.log()
+    }
+
+
+});
+
+
+/* ----------------- Fetching the details ----------------- */
 function allDetails(details) {
     let methodDetails = details.recipe.instructions_flat;
     let ingredientsList = details.recipe.ingredients_flat;
@@ -68,13 +84,25 @@ function allDetails(details) {
                             <h2>- Method -</h2>
                             <ul>${method}</ul>
                             <div id="good-luck">
-                                <img src="images/star.png"><p>Good Luck</p><img src="images/star.png">
+                                <img src="images/star.png"><h4>Good Luck</h4><img src="images/star.png">
                             </div>
                         </div>
                         <div class="ingredients">
                             <h2>- Ingredients -</h2>
                             ${ingredients}
                         </div>
-                </div>`    
-           
+                </div>`
+
+
+    const newTitle = document.querySelector("title");
+    
+
+/* ----------------- Change the page title ----------------- */
+    function pageTitleUpdate() {
+        newTitle.innerHTML = details.recipe.name;
+    } 
+    pageTitleUpdate();
 }
+
+
+
