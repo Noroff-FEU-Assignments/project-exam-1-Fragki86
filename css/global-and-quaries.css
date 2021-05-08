@@ -1,8 +1,8 @@
 /* --------------------------- Global  Styles --------------------------- */
 :root {
-    --light-brown: #a47343;
-    --dark-brown: #6f4323;
-    --black-brown: #38241d;
+    --light-brown: rgb(164, 115, 67);
+    --dark-brown: rgb(111, 67, 35);
+    --black-brown: rgb(56, 36, 29);
     --light-gray: #f4f4f4;
     --paragraph: 'Roboto', sans-serif;
     --titles: 'Cormorant Garamond', serif;
@@ -22,7 +22,8 @@ body a {
 header {
     background-color: white;
     width: 100%;
-    position: sticky;
+    /* position: sticky;
+    top: 0; */
     z-index: 100;
 }
 
@@ -449,6 +450,23 @@ footer p {
     grid-column: 1;
     grid-row: 1/3;
     width: 100%;
+}
+
+.bigger-img {
+    display: none;
+    position: fixed; 
+    z-index: 101; 
+    padding-top: 170px; 
+    /* padding-left: 200px; */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(56, 36, 29, 0.8);
+}
+
+.zoomed-img {
+    width: 75%;
 }
 
 .recipe-info {

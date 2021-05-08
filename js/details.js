@@ -1,5 +1,7 @@
 const detailsContainer = document.querySelector(".details-container");
 const relatedRecipes = document.querySelector(".related");
+const biggerImage = document.querySelector(".bigger-img");
+
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 
@@ -13,28 +15,42 @@ async function getDetails() {
         const response = await fetch(recipeDetailsURL);
         const details = await response.json();
 
-        // console.log(details)
         allDetails(details)
-
-
 
     } catch(error) {
         console.log("ERROR")
     }
 }
-getDetails().then(() => {
+
+
 
 /* ----------------- Making the img bigger ----------------- */
+getDetails().then(() => {
+
     const imgBig = document.querySelector(".img-info-grid img")
 
-
     imgBig.addEventListener("click", zoomImg);
+    
     function zoomImg() {
-        console.log()
+        biggerImage.style.display = "block";
     }
-
-
 });
+
+
+
+
+/* ----------------- Exit zoomed image ----------------- */
+document.addEventListener('mouseup', clear)
+
+function clear() {
+    const closeModal = document.querySelector(".bigger-img");
+    if (!closeModal.contains(clear.target)) {
+        closeModal.style.display = 'none';
+    }
+};
+
+
+
 
 
 /* ----------------- Fetching the details ----------------- */
@@ -92,11 +108,15 @@ function allDetails(details) {
                             ${ingredients}
                         </div>
                 </div>`
+        
 
+        biggerImage.innerHTML = `<img class="zoomed-img" src="${details.recipe.image_url}">`
 
     const newTitle = document.querySelector("title");
     
 
+
+    
 /* ----------------- Change the page title ----------------- */
     function pageTitleUpdate() {
         newTitle.innerHTML = details.recipe.name;
