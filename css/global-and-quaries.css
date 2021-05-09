@@ -6,7 +6,6 @@
     --light-gray: #f4f4f4;
     --paragraph: 'Roboto', sans-serif;
     --titles: 'Cormorant Garamond', serif;
-    /* box shadows will be black with 85% brightness */
 }
 
 body {
@@ -100,6 +99,14 @@ p {
 .logo-d {
     display: none;
 }
+/*------------------------------*/
+
+
+header {
+    position: sticky;
+    top: 0;
+}
+
 
 .search-icon, .mobile-menu {
     margin-bottom: 5px;
@@ -107,7 +114,54 @@ p {
 }
 
 
+/* Footer 
+------------------------------- */
+.footer-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+}
 
+.footer-container img {
+    width: 30%;
+    margin: 10px auto 30px auto;
+}
+
+
+.social-media {
+    margin: 3px;
+    width: 40%;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.h4-foot-form {
+    text-align: center;
+    margin: 20px auto 0px auto;
+}
+
+.footer-form {
+    margin-top: 10px;
+}
+
+.footer-form input {
+    border-radius: 10px;
+    border: 1px solid var(--dark-brown);
+    height: 20px;
+    width: 120px;
+}
+
+footer p {
+    background-color: white;
+    text-align: center;
+    font-family: var(--titles);
+    color: var(--dark-brown);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
 /* Titles & paragraphs 
 ------------------------------- */
 h2 {
@@ -125,7 +179,7 @@ nav {
 }
 
 .nav-links {
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,6 +213,69 @@ nav {
     font-weight: 600;
 }
 
+
+
+
+/* Home page 
+------------------------------- */
+#latestRecipes h2 {
+    margin-bottom: 10px;
+}
+
+.favorite-recipes {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.favorite-recipes img {
+    width: 80%;
+    align-self: center;
+}
+
+#dailyTips {
+    padding-bottom: 20px;
+}
+
+#dailyTips h2 {
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+
+.cooking-tips {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    gap: 30px;
+}
+
+.cooking-tips h3 {
+    text-align: left;
+    text-decoration: underline 1px;
+    margin-bottom: 0px;
+}
+
+.wonderings {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0px auto;
+
+}
+
+.wonderings img {
+    width: 80%;
+}
+
+.wonderings h3 {
+    text-decoration: underline 1px;
+    text-align: left;
+    padding-top: 15px;
+}
+
+
 }
 
 
@@ -172,7 +289,7 @@ nav {
 
 
 /* --------------------------- Desktop Styles --------------------------- */
-@media only screen and (min-width:1095px) {
+@media only screen and (min-width:1024px) {
 
 /* No Show 
 ------------------------------- */
