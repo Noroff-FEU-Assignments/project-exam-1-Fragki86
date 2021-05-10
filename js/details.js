@@ -34,6 +34,11 @@ getDetails().then(() => {
     function zoomImg() {
         biggerImage.style.display = "block";
     }
+
+
+
+
+    
 });
 
 
@@ -95,18 +100,31 @@ function allDetails(details) {
                             </div>
                         </div>
                     </div>
-                    <div class="method-ingre-grid">
-                        <div class="method">
-                            <h2>- Method -</h2>
-                            <ul>${method}</ul>
-                            <div id="good-luck">
-                                <img src="images/star.png"><h4>Good Luck</h4><img src="images/star.png">
-                            </div>
+                    <div class="mobile-details">
+                        <div class="tabs">
+                            <button class="tab-button" onclick="toggleTab(event, 'ingredients-mobile')">-Ingredients-</button>
+                            <button class="tab-button" onclick="toggleTab(event, 'method-mobile')">-Method-</button>
                         </div>
-                        <div class="ingredients">
-                            <h2>- Ingredients -</h2>
+                        <div class="tab-content" id="method-mobile">
+                            <ul>${method}</ul>
+                        </div>
+                        <div class="tab-content" id="ingredients-mobile">
                             ${ingredients}
                         </div>
+                    </div>
+                    <div class="method-ingre-grid">
+                            <div class="method">
+                                <h2>- Method -</h2>
+                                <ul>${method}</ul>
+                                <div id="good-luck">
+                                    <img src="images/star.png"><h4>Good Luck</h4><img src="images/star.png">
+                                </div>
+                            </div>
+                            <div class="ingredients">
+                                <h2>- Ingredients -</h2>
+                                ${ingredients}
+                            </div>
+                    </div>
                 </div>`
         
 
@@ -123,6 +141,29 @@ function allDetails(details) {
     } 
     pageTitleUpdate();
 }
+
+
+
+
+function toggleTab(event, show) {
+    let i, tabcontent, tabBtn;
+  
+    // This is to clear the previous clicked content.
+    tabcontent = document.querySelectorAll(".tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Set the tab to be "active".
+    tabBtn = document.querySelector(".tab-button");
+    for (i = 0; i < tabBtn.length; i++) {
+        tabBtn[i].className = tabBtn[i].className.replace(" active", "");
+    }
+  
+    // Display the clicked tab and set it to active.
+    document.getElementById(show).style.display = "block";
+    event.currentTarget.className += " active";
+  }
 
 
 
