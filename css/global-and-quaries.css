@@ -230,7 +230,7 @@ nav {
     padding-left: 0px;
     margin-top: 0px;
     width: 100%;
-    height: 42rem;
+    height: 27rem;
     justify-content: space-evenly;
     background-color:var(--light-gray);
     transform: translateX(100%);
@@ -319,12 +319,11 @@ nav {
 
 /* Recipes Page
 ------------------------------- */
-.recipes-list {
+.recipes-list a{
     display: flex;
     flex-direction: column;
-    width: 60%;
-    margin: 0px auto;
-    gap: 40px;
+    width: 70%;
+    margin: 0px auto 50px auto;
 }
 
 .individual-container {
