@@ -224,6 +224,7 @@ footer p {
 ------------------------------- */
 h1 {
     font-size: 1.8rem;
+    text-decoration: underline 2px;
 }
 
 h2 {
