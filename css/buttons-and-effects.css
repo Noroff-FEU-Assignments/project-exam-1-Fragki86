@@ -48,5 +48,10 @@
     margin-top: 20px;
 }
 
+#showMoreBtn:disabled {
+    background-color: var(--light-gray);
+    color: var(--light-brown);
+}
+
 
 

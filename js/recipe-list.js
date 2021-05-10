@@ -46,7 +46,7 @@ async function getRecipes() {
 
                 showMoreBtn.disabled = true;
                 showMoreBtn.innerText = "No more recipes to show"
-                showMoreBtn.style.width = "25%";
+                showMoreBtn.style.width = "50%";
             }
             
             recipeContainer.innerHTML += `

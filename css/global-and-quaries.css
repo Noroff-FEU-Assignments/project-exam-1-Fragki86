@@ -132,6 +132,19 @@ header {
 }
 
 
+
+
+
+/* Buttons adjustments
+------------------------------- */
+#showMoreBtn {
+    width: 80%;
+}
+
+
+
+
+
 /* Footer 
 ------------------------------- */
 .footer-container {
@@ -143,9 +156,10 @@ header {
 }
 
 .footer-container img {
-    width: 30%;
+    width: 25%;
     max-width: 20rem;
     margin: 10px auto 30px auto;
+    padding-left: 10px;
 }
 
 
@@ -168,14 +182,18 @@ header {
     justify-content: center;
 }
 
+.social-media img {
+    width: 60%;
+}
+
 .h4-foot-form {
     text-align: center;
-    margin: 20px auto 0px auto;
-    font-size: 0.6rem;
+    margin: 0px auto 0px auto;
+    font-size: 0.7rem;
 }
 
 .h4-foot {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     margin: 0px auto;
 }
 
@@ -230,7 +248,7 @@ nav {
     padding-left: 0px;
     margin-top: 0px;
     width: 100%;
-    height: 27rem;
+    height: 29rem;
     justify-content: space-evenly;
     background-color:var(--light-gray);
     transform: translateX(100%);
@@ -401,17 +419,17 @@ nav {
     display: none;
     position: fixed; 
     z-index: 101; 
-    padding-top: 170px; 
+    padding-top: 270px; 
     /* padding-left: 200px; */
     left: 0;
     top: 0;
     width: 100%; 
     height: 100%; 
-    background-color: rgba(56, 36, 29, 0.8);
+    background-color: rgba(56, 36, 29, 0.97);
 }
 
 .zoomed-img {
-    width: 75%;
+    width: 100%;
 }
 
 .recipe-info {
@@ -424,6 +442,51 @@ nav {
     padding-top: 20px;
 }
 
+
+
+.tabs {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid var(--dark-brown);
+    background-color: white;
+}
+  
+.tab-button {
+    float: left;
+    /* border: 1px solid var(--black-brown); */
+    outline: none;
+    cursor: pointer;
+    width: 50%;
+    padding: 6px 40px;
+    transition: 0.3s;
+    font-family: var(--titles);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--dark-brown);
+    
+}
+  
+.tab-button:hover {
+    background-color: #ddd;
+}
+  
+.tabs button.active {
+    background-color: #ccc;
+}
+  
+.tab-content {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+#ingredients-mobile {
+    display: block;
+    font-family: var(--titles);
+    color: var(--black-brown);
+    
+}
 
 
 #related {
@@ -451,45 +514,6 @@ nav {
 .rel-h3 h3{
     margin: 0.5rem auto 3rem auto;
     font-size: 0.8rem;
-}
-
-
-
-
-.tabs {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
-  
-.tab-button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-}
-  
-.tab-button:hover {
-    background-color: #ddd;
-}
-  
-.tabs button.active {
-    background-color: #ccc;
-}
-  
-.tab-content {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-
-#ingredients-mobile {
-    display: block;
 }
 
 
