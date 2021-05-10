@@ -8,7 +8,7 @@ const params = new URLSearchParams(queryString);
 
 /* ----------------- API call ----------------- */
 const id = params.get("id");
-const recipeDetailsURL = "http://easy-meals-recipes.georgiosf.no/wp-json/wp/v2/wprm_recipe/" + id ;
+const recipeDetailsURL = "https://easy-meals-recipes.georgiosf.no/wp-json/wp/v2/wprm_recipe/" + id ;
 
 async function getDetails() {
     try {

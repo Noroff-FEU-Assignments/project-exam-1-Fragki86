@@ -1,11 +1,6 @@
 const recipeContainer = document.querySelector(".recipes-list");
-const callAPI = "http://easy-meals-recipes.georgiosf.no/wp-json/wp/v2/wprm_recipe?per_page=20";
-// const callAPI = "http://easy-meals-recipes.georgiosf.no/wp-json/wp/v2/wprm_recipe?per_page=";
+const callAPI = "https://easy-meals-recipes.georgiosf.no/wp-json/wp/v2/wprm_recipe?per_page=20";
 const showMoreBtn = document.querySelector("#showMoreBtn")
-
-// const extraRec = `?per_page=`;
-// let recNumber = 6;
-// console.log(recNumber);
 
 
 async function getRecipes() {
@@ -91,25 +86,6 @@ async function getRecipes() {
     
 
 }
-getRecipes()
-
-
-
-
-
-
-
-// getRecipes(callAPI).then(() => {
-
-    // showMoreBtn.addEventListener("click", showMoreRecipes);
-
-//     function showMoreRecipes() {
-//         recNumber = recNumber + 3
-
-
-//         console.log(recNumber);
-//     }
-
-// });
+getRecipes();
 
 

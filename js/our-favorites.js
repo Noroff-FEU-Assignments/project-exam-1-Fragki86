@@ -1,5 +1,5 @@
 const favoriteRecipesContainer = document.querySelector(".favorite-recipes");
-const callAPI = "http://easy-meals-recipes.georgiosf.no/wp-json/wp/v2/wprm_recipe?per_page=3&offset=9";
+const callAPI = "https://easy-meals-recipes.georgiosf.no/wp-json/wp/v2/wprm_recipe?per_page=3&offset=9";
 
 
 async function getFavorite() {

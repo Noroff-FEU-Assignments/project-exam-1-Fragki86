@@ -1,5 +1,5 @@
 const relatedRecipesContainer = document.querySelector(".related-courses");
-const callAPI = "http://easy-meals-recipes.georgiosf.no/wp-json/wp/v2/wprm_recipe?per_page=3";
+const callAPI = "https://easy-meals-recipes.georgiosf.no/wp-json/wp/v2/wprm_recipe?per_page=3";
 
 
 async function getRelated() {
