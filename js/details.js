@@ -26,19 +26,13 @@ async function getDetails() {
 
 /* ----------------- Making the img bigger ----------------- */
 getDetails().then(() => {
-
     const imgBig = document.querySelector(".img-info-grid img")
 
     imgBig.addEventListener("click", zoomImg);
     
     function zoomImg() {
         biggerImage.style.display = "block";
-    }
-
-
-
-
-    
+    }    
 });
 
 
@@ -56,8 +50,6 @@ function clear() {
 
 
 
-
-
 /* ----------------- Fetching the details ----------------- */
 function allDetails(details) {
     let methodDetails = details.recipe.instructions_flat;
@@ -69,15 +61,10 @@ function allDetails(details) {
     for (let i = 0; i < methodDetails.length; i++) {
         method += methodDetails[i].text;
     }
-    // console.log(method);
 
     for (let v = 0; v < ingredientsList.length; v++) {
-        ingredients += "<table class='ingredients-table'>" + "<tr>" + "<td>" + ingredientsList[v].amount + " " + ingredientsList[v].unit + "</td>" + "<td>" + ingredientsList[v].name + " " + ingredientsList[v].notes + "</td>" + "</tr>" + "</table";
-        
-        // console.log(ingredientsList[v]);
+        ingredients += "<table class='ingredients-table'>" + "<tr>" + "<td>" + ingredientsList[v].amount + " " + ingredientsList[v].unit + "</td>" + "<td>" + ingredientsList[v].name + " " + ingredientsList[v].notes + "</td>" + "</tr>" + "</table>";
     }
-
-    // console.log(ingredients);
 
         detailsContainer.innerHTML = `
                 <div class="recipe-details-container">
@@ -130,12 +117,10 @@ function allDetails(details) {
 
         biggerImage.innerHTML = `<img class="zoomed-img" src="${details.recipe.image_url}">`
 
-    const newTitle = document.querySelector("title");
-    
 
-
-    
 /* ----------------- Change the page title ----------------- */
+    const newTitle = document.querySelector("title");    
+
     function pageTitleUpdate() {
         newTitle.innerHTML = details.recipe.name;
     } 
@@ -146,7 +131,9 @@ function allDetails(details) {
 
 
 function toggleTab(event, show) {
-    let i, tabcontent, tabBtn;
+    let i;
+    let tabcontent;
+    let tabBtn;
   
     // This is to clear the previous clicked content.
     tabcontent = document.querySelectorAll(".tab-content");
@@ -155,7 +142,7 @@ function toggleTab(event, show) {
     }
   
     // Set the tab to be "active".
-    tabBtn = document.querySelector(".tab-button");
+    tabBtn = document.querySelectorAll(".tab-button");
     for (i = 0; i < tabBtn.length; i++) {
         tabBtn[i].className = tabBtn[i].className.replace(" active", "");
     }
@@ -163,7 +150,7 @@ function toggleTab(event, show) {
     // Display the clicked tab and set it to active.
     document.getElementById(show).style.display = "block";
     event.currentTarget.className += " active";
-  }
+}
 
 
 

@@ -5,6 +5,12 @@
     <meta name="description" content="A blog that provides easy and simple daily recipes"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
     <link href="css/style.css" rel="stylesheet" />
     <title>Easy Meals Home</title>
 </head>
@@ -26,11 +32,6 @@
                 <li><a href="contact.html">CONTACT</a></li>
                 <li><a href="about.html">ABOUT US</a></li>
             </ul>
-            <!-- <div class="custom-burger-button">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div> -->
         </nav>
     </header>
     <!-- Main -->
@@ -38,6 +39,10 @@
         <section id="latestRecipes">
             <h2>Latest recipes</h2>
             <div class="carousel-container">
+                <div class="carousel-buttons">
+                    <button id="prev-slide"><i class="fas fa-angle-left"></i></button>
+                    <button id="next-slide"><i class="fas fa-angle-right"></i></button>
+                </div>
                 <div class="par">
                     <img src="images/lamb kleftiko.jpg">
                     <div class="sub">
@@ -47,22 +52,13 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div id="rec-1" class="slide">
-                    <div class="img-container"><img src="images/lamb kleftiko.jpg" alt="food"></div>
-                    <div class="text-container"></div>
-                </div>
-                <div id="rec-2" class="slide">
-                    <div class="img-container"><img src="images/Cod in tomato sauce.jpg" alt="food"></div>
-                    <div class="text-container"></div>
-                </div>
-                <div id="rec-3" class="slide">
-                    <div class="img-container"><img src="images/Aubergines papoutsakia.jpg" alt="food"></div>
-                    <div class="text-container"></div>
-                </div>
-                <div class="carousel-buttons">
-                    <button id="btn-prev" aria-label="previous recipe"><</button>
-                    <button id="btn-next" aria-label="next recipe">></button>
-                </div> -->
+                
+            </div>
+            <div class="dots-container">
+                <span class="active-dot"></span>
+                <span class="active-dot"></span>
+                <span class="active-dot"></span>
+                <span class="active-dot"></span>
             </div>
         </section>
         <section id="ourFavorites" class="section-with-separator">
@@ -120,10 +116,10 @@
             <img src="images/Logo-footer-mobile.png">
             <h4 class="h4-foot">LET'S BE FRIENDS</h4>
             <div class="social-media">
-                <a href="#"><img src="images/Icon-pinterest.png" alt="pinterest icon"></a>
-                <a href="#"><img src="images/Icon-facebook.png" alt="facebook icon"></a>
-                <a href="#"><img src="images/Icon-youtube.png" alt="youtube icon"></a>
-                <a href="#"><img src="images/Icon-instagram.png" alt="instagram icon"></a>            </div>
+                <a href="#" id="pinterest"><img src="images/Icon-pinterest.png" alt="pinterest icon"></a>
+                <a href="#"><img src="images/Icon-facebook.png" alt="facebook icon" id="facebook"></a>
+                <a href="#"><img src="images/Icon-youtube.png" alt="youtube icon" id="youtube"></a>
+                <a href="#"><img src="images/Icon-instagram.png" alt="instagram icon" id="instagram"></a>            </div>
             <h4 class="h4-foot-form">Weekly newsletter</h4>
             <div class="footer-form">
                 <form method="POST">
@@ -141,3 +137,21 @@
 </body>
 </html>
 
+
+
+<!-- <div id="rec-1" class="slide">
+                    <div class="img-container"><img src="images/lamb kleftiko.jpg" alt="food"></div>
+                    <div class="text-container"></div>
+                </div>
+                <div id="rec-2" class="slide">
+                    <div class="img-container"><img src="images/Cod in tomato sauce.jpg" alt="food"></div>
+                    <div class="text-container"></div>
+                </div>
+                <div id="rec-3" class="slide">
+                    <div class="img-container"><img src="images/Aubergines papoutsakia.jpg" alt="food"></div>
+                    <div class="text-container"></div>
+                </div>
+                <div class="carousel-buttons">
+                    <button id="btn-prev" aria-label="previous recipe"><</button>
+                    <button id="btn-next" aria-label="next recipe">></button>
+                </div> -->

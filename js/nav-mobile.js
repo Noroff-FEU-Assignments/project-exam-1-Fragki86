@@ -11,7 +11,6 @@ function fadeInMenu() {
 
 function stylishLinks() {
     navList.forEach(function(links, length){
-        console.log(length);
         if (links.style.animation) {
             links.style.animation = '';
         } else {
