@@ -71,12 +71,12 @@ h1 {
 
 h2 {
     font-weight: 600;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
 }
 
 h3 {
     font-weight: 500;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
 }
 
 h4 {
@@ -87,7 +87,7 @@ h4 {
 p {
     font-family: var(--paragraph);
     color: var(--dark-brown);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 /* --------------------------- Mobile  Styles --------------------------- */
@@ -688,6 +688,7 @@ nav {
 
 #header-container {
     width: 80%;
+    padding-bottom: 10px;
 }
 
 
@@ -700,19 +701,20 @@ nav {
     width: 80%;
     margin: 0px auto;
     border-bottom: 1px solid var(--dark-brown);
+    padding: 5px 0px;
 }
 
 .nav-links {
     display: flex;
     justify-content: space-evenly;
-    margin: 2px 140px;
+    margin: 5px 140px;
 }
 
 .nav-links a, li {
     list-style: none;
     color: var(--dark-brown);
     font-family: var(--titles);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
@@ -731,8 +733,8 @@ nav {
 /* Carousel 
 ------------------------------- */
 .carousel-container {
-    width: 100%;
-    margin: 0px auto 50px auto;
+    width: 80%;
+    margin: 0px auto 10px auto;
     border: 1px solid var(--black-brown);
     position: relative;
 }
@@ -743,13 +745,13 @@ nav {
 }
 
 .par img {
-    width: 65%;
+    width: 59%;
 }
 
 .sub {
     position: absolute;
     border-left: 1px solid var(--dark-brown);
-    width: 52%;
+    width: 59%;
     right: 0px;
     height: 100%;
     background-color: white;
@@ -764,8 +766,8 @@ nav {
 
 .info {
     position: absolute;
-    right: 10px;
-    width: 70%;
+    right: 65px;
+    width: 60%;
 }
 
 .carousel-buttons {
@@ -776,8 +778,41 @@ nav {
     z-index: 1;
     top: 50%;
     transform: translateY(-50%);
-    height: 5rem;
+    height: 8rem;
+    cursor: pointer;
 }
+
+.carousel-buttons button {
+    width: 2.5rem;
+    background-color: rgba(255, 255, 255, .65);
+    font-size: 3rem;
+    border: none;   
+}
+
+.carousel-buttons button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.dots-container {
+    display: flex;
+    width: 10%;
+    margin: 0px auto 40px auto;
+    justify-content: space-between;
+}
+
+.dots-container span {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid var(--dark-brown);
+    border-radius: 50%;
+}
+
+.active-dot {
+    background-color: var(--dark-brown);
+}
+
+
 
 
 
@@ -849,13 +884,13 @@ footer p {
 /* Home
 ------------------------------- */
 #latestRecipes {
-    width: 90%;
+    width: 100%;
     margin: 0px auto;
 }
 
 
 #latestRecipes h2 {
-    margin-bottom: 10px;
+    margin: 15px auto 10px auto;
 }
 
 #dailyTips {
@@ -966,7 +1001,7 @@ footer p {
 
 .img-info-grid h2 {
     grid-column: 2;
-    grid-row: 1/2;
+    grid-row: 1;
 }
 
 .img-info-grid img{
@@ -980,7 +1015,7 @@ footer p {
     position: fixed; 
     z-index: 101; 
     padding-top: 170px; 
-    /* padding-left: 200px; */
+    padding-left: 200px;
     left: 0;
     top: 0;
     width: 100%; 
@@ -989,7 +1024,11 @@ footer p {
 }
 
 .zoomed-img {
-    width: 75%;
+    width: 70%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
 }
 
 .recipe-info {
@@ -1014,7 +1053,7 @@ footer p {
 .method {
     border-right: 1px solid var(--dark-brown);
     border-left: 1px solid var(--dark-brown);
-    padding: 30px 0px;
+    /* padding: 30px 0px; */
 }
 
 .method p {
@@ -1042,14 +1081,27 @@ footer p {
 
 .ingredients {
     margin: 0px auto;
-    padding: 30px 0;
+    /* padding: 30px 0; */
+}
+
+
+.ingredients-table {
+    width: 100%;
 }
 
 .ingredients-table td{
     font-family: var(--paragraph);
     margin: 50px;
     color: var(--black-brown);
+    border: 1px solid 
+}
 
+.td-1 {
+    width: 40%;
+}
+
+.td-2 {
+    width: 60%;
 }
 
 #related {

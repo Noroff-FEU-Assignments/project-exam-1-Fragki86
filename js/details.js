@@ -63,7 +63,7 @@ function allDetails(details) {
     }
 
     for (let v = 0; v < ingredientsList.length; v++) {
-        ingredients += "<table class='ingredients-table'>" + "<tr>" + "<td>" + ingredientsList[v].amount + " " + ingredientsList[v].unit + "</td>" + "<td>" + ingredientsList[v].name + " " + ingredientsList[v].notes + "</td>" + "</tr>" + "</table>";
+        ingredients += "<table class='ingredients-table'>" + "<tr>" + "<td class='td-1'>" + ingredientsList[v].amount + " " + ingredientsList[v].unit + "</td>" + "<td class='td-2'>" + ingredientsList[v].name + " " + ingredientsList[v].notes + "</td>" + "</tr>" + "</table>";
     }
 
         detailsContainer.innerHTML = `
