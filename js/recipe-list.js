@@ -1,5 +1,5 @@
 const recipeContainer = document.querySelector(".recipes-list");
-const callAPI = "https://easy-meals-recipes.georgiosf.no/wp-json/wp/v2/wprm_recipe?per_page=20";
+const callAPI = "https://easy-meals-recipes.georgiosf.no/wp-json/wp/v2/wprm_recipe?per_page=12";
 const showMoreBtn = document.querySelector("#showMoreBtn")
 
 
@@ -16,6 +16,32 @@ async function getRecipes() {
             if (i===6) {
                 break
             } 
+
+            recipeContainer.innerHTML += `
+            <a href="recipe-details.html?id=${recipes[i].id}">
+            <div class="individual-container">
+             <div class="ind-img">
+                 <img class="rendered-img" src=${recipes[i].recipe.image_url}>
+             </div>
+                <div class="ind-h2">
+                    <h2>${recipes[i].recipe.name}</h2>
+                </div>
+
+                <div class="cooking-info">
+                    <div class="cook-time">
+                        <img src="images/Icon-stopwatch.png"><p>${recipes[i].recipe.total_time}'<p>
+                    </div>
+                    <div class="difficulty">
+                        <img src="images/Icon-chef.png"><p>${recipes[i].recipe.custom_time_label}</p>
+                    </div>
+                    <div class="portions">
+                        <img src="images/Icon-spoon-fork.png"><p>${recipes[i].recipe.servings}</p>
+                    </div>
+                </div>
+            </div>
+            </a>` 
+
+
 
             function showMoreRecipes() {
                 for (let i = 6; i < recipes.length; i++)
@@ -49,30 +75,7 @@ async function getRecipes() {
                 showMoreBtn.style.width = "50%";
             }
             
-            recipeContainer.innerHTML += `
-                            <a href="recipe-details.html?id=${recipes[i].id}">
-                            <div class="individual-container">
-                             <div class="ind-img">
-                                 <img class="rendered-img" src=${recipes[i].recipe.image_url}>
-                             </div>
-                                <div class="ind-h2">
-                                    <h2>${recipes[i].recipe.name}</h2>
-                                </div>
-    
-                                <div class="cooking-info">
-                                    <div class="cook-time">
-                                        <img src="images/Icon-stopwatch.png"><p>${recipes[i].recipe.total_time}'<p>
-                                    </div>
-                                    <div class="difficulty">
-                                        <img src="images/Icon-chef.png"><p>${recipes[i].recipe.custom_time_label}</p>
-                                    </div>
-                                    <div class="portions">
-                                        <img src="images/Icon-spoon-fork.png"><p>${recipes[i].recipe.servings}</p>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>` 
-
+            
 
 
         }

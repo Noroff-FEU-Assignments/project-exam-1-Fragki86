@@ -3,7 +3,7 @@
     --light-brown: rgb(164, 115, 67);
     --dark-brown: rgb(111, 67, 35);
     --black-brown: rgb(56, 36, 29);
-    --light-gray: #f4f4f4;
+    --light-gray: rgb(244, 244, 244);
     --paragraph: 'Roboto', sans-serif;
     --titles: 'Cormorant Garamond', serif;
 }
@@ -748,8 +748,12 @@ nav {
     width: 59%;
 }
 
+
 .sub {
     position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80% 20%;
     border-left: 1px solid var(--dark-brown);
     width: 59%;
     right: 0px;
@@ -766,8 +770,35 @@ nav {
 
 .info {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    grid-row: 1;
     right: 65px;
     width: 60%;
+}
+
+.cooking-info-carousel {
+    display: flex;
+    grid-row: 2;
+    width: 80%;
+    justify-self: end;
+    justify-content: space-evenly;
+}
+
+.cooking-info-carousel div {
+    display: flex;
+    align-items: center;
+}
+
+.cooking-info-carousel p {
+    font-family: var(--paragraph);
+    color: var(--black-brown);
+    padding-left: 5px;
+    font-size: 1.1rem;
+}
+
+.info p {
+    font-size: 1vw;
 }
 
 .carousel-buttons {
@@ -779,7 +810,6 @@ nav {
     top: 50%;
     transform: translateY(-50%);
     height: 8rem;
-    cursor: pointer;
 }
 
 .carousel-buttons button {
@@ -787,11 +817,21 @@ nav {
     background-color: rgba(255, 255, 255, .65);
     font-size: 3rem;
     border: none;   
+    cursor: pointer;
 }
 
-.carousel-buttons button:hover {
+/* .carousel-buttons button:hover {
+    background-color: rgba(255, 255, 255, 1);
+} */
+
+#prev-slide:hover {
     background-color: rgba(255, 255, 255, 1);
 }
+
+#next-slide:hover {
+    background-color: rgb(240, 240, 240);
+}
+
 
 .dots-container {
     display: flex;
@@ -802,8 +842,8 @@ nav {
 
 .dots-container span {
     display: block;
-    width: 1rem;
-    height: 1rem;
+    width: 15px;
+    height: 15px;
     border: 1px solid var(--dark-brown);
     border-radius: 50%;
 }
@@ -1080,6 +1120,7 @@ footer p {
 }
 
 .ingredients {
+    width: 80%;
     margin: 0px auto;
     /* padding: 30px 0; */
 }
@@ -1087,22 +1128,27 @@ footer p {
 
 .ingredients-table {
     width: 100%;
+    margin: 0px auto;
+    padding-left: 40px;
 }
 
 .ingredients-table td{
     font-family: var(--paragraph);
+    font-size: 1vw;
     margin: 50px;
     color: var(--black-brown);
-    border: 1px solid 
+    /* border: 1px solid; */
+    
 }
 
 .td-1 {
-    width: 40%;
+    width: 25%;
+    font-weight: 600;
 }
 
-.td-2 {
-    width: 60%;
-}
+/* .td-2 {
+    margin-left: 20px;
+} */
 
 #related {
     margin: 100px auto;
