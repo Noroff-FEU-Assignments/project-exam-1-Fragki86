@@ -80,10 +80,10 @@ h3 {
     font-size: 1.3vw;
 }
 
-h4 {
+/* h4 {
     font-style: italic;
     font-size: 1.3vw;
-}
+} */
 
 p {
     font-family: var(--paragraph);
@@ -554,6 +554,9 @@ nav {
     float: left;
     border: 1px solid var(--black-brown);
     /* outline: none; */
+    /* border-bottom: none;
+    border-left: none;
+    border-right: none; */
     width: 50%;
     padding: 6px 40px;
     transition: 0.3s;
@@ -568,7 +571,10 @@ nav {
 .tabs button.active {
     background-color: white;
     border-bottom: none;
+    border-left: none;
+    border-right: none;
     box-shadow: none;
+
 }
   
 .tab-content {
@@ -605,6 +611,18 @@ nav {
     width: 90%;
 }
 
+#good-luck {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#good-luck h4 {
+    font-style: italic;
+    font-family: var(--titles);
+    font-size: 1.2rem;
+}
 
 #related {
     margin: 100px auto;

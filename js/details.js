@@ -94,9 +94,15 @@ function allDetails(details) {
                         </div>
                         <div class="tab-content" id="method-mobile">
                             <ul>${method}</ul>
+                            <div id="good-luck">
+                                <img src="images/star.png"><h4>Good Luck</h4><img src="images/star.png">
+                            </div>
                         </div>
                         <div class="tab-content" id="ingredients-mobile">
                             ${ingredients}
+                            <div id="good-luck">
+                                <img src="images/star.png"><h4>Good Luck</h4><img src="images/star.png">
+                            </div>
                         </div>
                     </div>
                     <div class="method-ingre-grid">
