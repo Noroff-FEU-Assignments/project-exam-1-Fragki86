@@ -91,7 +91,7 @@ p {
 }
 
 /* --------------------------- Mobile  Styles --------------------------- */
-@media only screen and (max-width:1094px) {
+@media only screen and (max-width:768px) {
 
 /* No Show 
 ------------------------------- */
@@ -225,11 +225,19 @@ footer p {
 /* Titles & paragraphs 
 ------------------------------- */
 h1 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
 }
 
 h2 {
+    font-size: 1.3rem;
+}
+
+h3 {
     font-size: 1.1rem;
+}
+
+p {
+    font-size: 0.9rem;
 }
 
 
@@ -282,41 +290,61 @@ nav {
 ------------------------------- */
 .carousel-container {
     width: 100%;
-    margin: 0px auto 50px auto;
-    border: 1px solid var(--black-brown);
-    position: relative;
-}
-
-.par {
     display: flex;
+    flex-direction: column;
+    margin: 0px auto 10px auto;
+    border-top: 1px solid var(--black-brown);
+    border-bottom: 1px solid var(--black-brown);
     position: relative;
 }
 
 .par img {
-    width: 65%;
+    width: 100%;
 }
 
+
 .sub {
-    position: absolute;
-    border-left: 1px solid var(--dark-brown);
-    width: 52%;
-    right: 0px;
-    height: 100%;
+    width: 100%;
     background-color: white;
-    clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 5% 100%);
 }
 
 .sub h2 {
     font-weight: 500;
-    font-size: 2vw;
+    font-size: 1.25rem;
     text-decoration: underline 1px;   
+    margin: 10px auto;
 }
 
 .info {
-    position: absolute;
-    right: 10px;
-    width: 70%;
+    width: 80%;
+    margin: 2px auto;
 }
+
+.info p {
+    width: 95%;
+    margin: 2px auto;
+}
+
+.cooking-info-carousel {
+    display: flex;
+    width: 80%;
+    margin: 5px auto;
+    justify-self: end;
+    justify-content: space-evenly;
+}
+
+.cooking-info-carousel div {
+    display: flex;
+    align-items: center;
+}
+
+.cooking-info-carousel p {
+    font-family: var(--paragraph);
+    color: var(--black-brown);
+    padding-left: 5px;
+    font-size: 1rem;
+}
+
 
 .carousel-buttons {
     position: absolute;
@@ -326,7 +354,33 @@ nav {
     z-index: 1;
     top: 50%;
     transform: translateY(-50%);
-    height: 5rem;
+}
+
+.carousel-buttons button {
+    width: 1.8rem;
+    font-size: 2.7rem;
+    height: 60px;
+    /* border: none;    */
+    padding: 0px 0px;
+}
+
+.dots-container {
+    display: flex;
+    width: 20%;
+    margin: 0px auto 40px auto;
+    justify-content: space-between;
+}
+
+.dots-container span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--dark-brown);
+    border-radius: 50%;
+}
+
+.active-dot {
+    background-color: var(--dark-brown);
 }
 
 
@@ -340,7 +394,7 @@ nav {
 .favorite-recipes {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     margin: 0px auto;
 }
 
@@ -369,7 +423,6 @@ nav {
     text-align: left;
     text-decoration: underline 1px;
     margin-bottom: 0px;
-    font-size: 0.7rem;
 }
 
 .wonderings {
@@ -389,7 +442,7 @@ nav {
 
 
 /* Recipes Page
-------------------------------- */
+------------------------------------------ */
 .recipes-list a{
     display: flex;
     flex-direction: column;
@@ -658,12 +711,12 @@ nav {
 }
 
 
-/* --------------------------- Tablet Styles --------------------------- 
-@media only screen and (min-width:481px) and (max-width:768px) {
+/* --------------------------- Tablet Styles ---------------------------  */
+@media only screen and (min-width:769px) and (max-width:1023px) {
 
 
 }
-*/
+
 
 
 
@@ -835,7 +888,7 @@ nav {
 
 .dots-container {
     display: flex;
-    width: 10%;
+    width: 8%;
     margin: 0px auto 40px auto;
     justify-content: space-between;
 }

@@ -1,9 +1,5 @@
 const carouselAPI = "https://easy-meals-recipes.georgiosf.no/wp-json/wp/v2/wprm_recipe?per_page=1&offset=";
-
-
-const wholeSection = document.querySelector("#latestRecipes");
 const carousel = document.querySelector(".carousel-container");
-const carouselBtns = document.querySelector(".carousel-buttons");
 const dots = document.querySelector(".dots-container");
 const activeDot = document.querySelector(".active-dot");
 
@@ -52,7 +48,7 @@ async function getCarousel() {
                     </a>`
         })
 
-
+        /* ----------------- Button functionality ----------------- */
         const prevBtn = document.querySelector("#prev-slide");
         const nextBtn = document.querySelector("#next-slide");
 
@@ -71,8 +67,22 @@ async function getCarousel() {
             getCarousel();
         });
 
-       
+
+
+       /* ----------------- Dots functionality ----------------- */
+        
+
+    //    const dots = document.querySelector(".dot");
+    //         const activeDot = document.querySelector(".active-dot");
             
+
+    //     for (let i = 0; i < dots.length; i++) {
+           
+    //         if (offset===13) {
+    //             dots[0].classlist.add("active-dot")
+    //         }
+    //     }
+
         } catch(error) {
             console.log("Error");
         }
