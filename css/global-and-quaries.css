@@ -448,7 +448,7 @@ nav {
 .recipes-list a{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 80%;
     margin: 0px auto 30px auto;
 }
 
@@ -581,7 +581,7 @@ nav {
 #ingredients-mobile {
     display: block;
     font-family: var(--paragraph);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--black-brown);
     width: 100%;
 }
