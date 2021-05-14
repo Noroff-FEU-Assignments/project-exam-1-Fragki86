@@ -70,7 +70,7 @@ function allDetails(details) {
                 <div class="recipe-details-container">
                     <h1>${details.recipe.name}</h1>
                     <div class="img-info-grid">
-                        <img src="${details.recipe.image_url}">
+                        <img class="details-img" src="${details.recipe.image_url}">
                         <h2>- Info -</h2>
                         <div class="recipe-info">
                             ${details.recipe.summary}
@@ -129,25 +129,25 @@ function allDetails(details) {
 
 
 
-
+/* ----------------- Mobile Tabs ----------------- */
 function toggleTab(event, show) {
     let i;
     let tabcontent;
     let tabBtn;
   
-    // This is to clear the previous clicked content.
+    
     tabcontent = document.querySelectorAll(".tab-content");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
   
-    // Set the tab to be "active".
+    
     tabBtn = document.querySelectorAll(".tab-button");
     for (i = 0; i < tabBtn.length; i++) {
         tabBtn[i].className = tabBtn[i].className.replace(" active", "");
     }
   
-    // Display the clicked tab and set it to active.
+    
     document.getElementById(show).style.display = "block";
     event.currentTarget.className += " active";
 }
