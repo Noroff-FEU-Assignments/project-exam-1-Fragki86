@@ -585,7 +585,7 @@ nav {
     margin: 3px auto;
 }
 
-#ingredients-mobile {
+/* #ingredients-mobile {
     display: block;
     font-family: var(--paragraph);
     font-size: 0.95rem;
@@ -597,7 +597,21 @@ nav {
     width: 100%;
     margin: 0px auto;
     padding-left: 40px;
+} */
+
+.ingredients-u-list {
+    display: list-item;
+    list-style-position: inside;
+    list-style-type: disc;
+    color: var(--dark-brown);
+    font-family: var(--paragraph);
 }
+
+.ingredients-u-list span {
+    font-weight: bold;
+    color: var(--black-brown);
+}
+
 
 /* .ingredients-table td{
     font-family: var(--paragraph);
@@ -1277,8 +1291,13 @@ footer p {
     display: list-item;
     list-style-position: inside;
     list-style-type: disc;
-    color: var(--black-brown);
+    color: var(--dark-brown);
     font-family: var(--paragraph);
+}
+
+.ingredients-u-list span {
+    font-weight: bold;
+    color: var(--black-brown);
 }
 
 
