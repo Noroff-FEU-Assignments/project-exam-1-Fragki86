@@ -541,13 +541,10 @@ nav {
     padding-top: 20px;
 }
 
-
-
 .tabs {
     width: 100%;
     overflow: hidden;
     /* border-top: 1px solid var(--dark-brown); */
-    
 }
   
 .tab-button {
@@ -609,10 +606,7 @@ nav {
 #method-mobile {
     list-style-type: decimal;
     width: 90%;
-    counter-reset: p;
-    
-    
-    
+    counter-reset: p;    
 }
 
 #method-mobile p{    
@@ -1162,7 +1156,6 @@ footer p {
 .img-info-grid h2 {
     grid-column: 2;
     grid-row: 1;
-    margin-bottom: 0px;
 }
 
 .img-info-grid img{
@@ -1185,7 +1178,7 @@ footer p {
 }
 
 .zoomed-img {
-    width: 60%;
+    width: 70%;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -1202,6 +1195,8 @@ footer p {
     padding-top: 20px;
 }
 
+
+
 .method-ingre-grid {
     width: 80%;
     margin: 25px auto;
@@ -1212,25 +1207,17 @@ footer p {
 .method {
     border-right: 1px solid var(--dark-brown);
     border-left: 1px solid var(--dark-brown);
-    list-style-type: decimal;
+    /* padding: 30px 0px; */
 }
 
 .method p {
-    counter-increment: p;
+    display: list-item;
+    list-style-type: disc;
     padding-right: 15px;
     font-size: 1rem;
     width: 80%;
     margin: 15px auto;
-    color: var(--dark-brown);
-}
-
-.method p::before {
-    content: counter(p); 
-    display: inline-block; 
-    width: 1rem;
-    margin-left: -1rem;
-    font-weight: bold;
-    color: var(--black-brown)
+    color: var(--black-brown);
 }
 
 
@@ -1240,7 +1227,7 @@ footer p {
     justify-content: space-evenly;
 }
 
-#good-luck h4 {
+#good-luck p {
     font-style: italic;
     font-family: var(--titles);
     font-size: 1.5rem;
@@ -1249,9 +1236,11 @@ footer p {
 .ingredients {
     width: 80%;
     margin: 0px auto;
+    /* padding: 30px 0; */
 }
 
-/* .ingredients-table {
+
+.ingredients-table {
     width: 100%;
     margin: 0px auto;
     padding-left: 40px;
@@ -1259,31 +1248,21 @@ footer p {
 
 .ingredients-table td{
     font-family: var(--paragraph);
+    font-size: 1vw;
     margin: 50px;
-    padding-top: 5px;
+    color: var(--black-brown);
+    /* border: 1px solid; */
+    
 }
 
 .td-1 {
-    width: 35%;
+    width: 25%;
     font-weight: 600;
 }
 
-.td-2 {
-    color: var(--dark-brown);
-    font-family: var(--paragraph);
+/* .td-2 {
+    margin-left: 20px;
 } */
-
-.ingredients-u-list {
-    display: list-item;
-    list-style-position: inside;
-    list-style-type: disc;
-    color: var(--black-brown);
-    font-family: var(--paragraph);
-}
-
-
-
-
 
 #related {
     margin: 100px auto;
