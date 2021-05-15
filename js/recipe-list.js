@@ -21,7 +21,7 @@ async function getRecipes() {
             <a href="recipe-details.html?id=${recipes[i].id}">
             <div class="individual-container">
              <div class="ind-img">
-                 <img class="rendered-img" src=${recipes[i].recipe.image_url}>
+                 <img class="rendered-img" src=${recipes[i].recipe.image_url} alt="${recipes[i].recipe.name}">
              </div>
                 <div class="ind-h2">
                     <h2>${recipes[i].recipe.name}</h2>
@@ -29,13 +29,13 @@ async function getRecipes() {
 
                 <div class="cooking-info">
                     <div class="cook-time">
-                        <img src="images/Icon-stopwatch.png"><p>${recipes[i].recipe.total_time}'<p>
+                        <img src="images/Icon-stopwatch.png" alt="stopwatch"><p>${recipes[i].recipe.total_time}'<p>
                     </div>
                     <div class="difficulty">
-                        <img src="images/Icon-chef.png"><p>${recipes[i].recipe.custom_time_label}</p>
+                        <img src="images/Icon-chef.png" alt="chefs-hat"><p>${recipes[i].recipe.custom_time_label}</p>
                     </div>
                     <div class="portions">
-                        <img src="images/Icon-spoon-fork.png"><p>${recipes[i].recipe.servings}</p>
+                        <img src="images/Icon-spoon-fork.png" alt="spoon and fork"><p>${recipes[i].recipe.servings}</p>
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@ async function getRecipes() {
                 <a href="recipe-details.html?id=${recipes[i].id}">
                 <div class="individual-container">
                  <div class="ind-img">
-                     <img class="rendered-img" src=${recipes[i].recipe.image_url}>
+                     <img class="rendered-img" src=${recipes[i].recipe.image_url} alt="${recipes[i].recipe.name}">
                  </div>
                     <div class="ind-h2">
                         <h2>${recipes[i].recipe.name}</h2>
@@ -58,13 +58,13 @@ async function getRecipes() {
 
                     <div class="cooking-info">
                         <div class="cook-time">
-                            <img src="images/Icon-stopwatch.png"><p>${recipes[i].recipe.total_time}'<p>
+                            <img src="images/Icon-stopwatch.png" alt="stopwatch"><p>${recipes[i].recipe.total_time}'<p>
                         </div>
                         <div class="difficulty">
-                            <img src="images/Icon-chef.png"><p>${recipes[i].recipe.custom_time_label}</p>
+                            <img src="images/Icon-chef.png" alt="chefs-hat"><p>${recipes[i].recipe.custom_time_label}</p>
                         </div>
                         <div class="portions">
-                            <img src="images/Icon-spoon-fork.png"><p>${recipes[i].recipe.servings}</p>
+                            <img src="images/Icon-spoon-fork.png" alt="spoon and fork"><p>${recipes[i].recipe.servings}</p>
                         </div>
                     </div>
                 </div>

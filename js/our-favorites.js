@@ -15,7 +15,7 @@ async function getFavorite() {
                     <a href="recipe-details.html?id=${recipeInfo.id}">
                     <div class="related-recipes-container">
                         <div class="rel-img">
-                            <img class="rel-rend-img" src=${recipeInfo.recipe.image_url}>
+                            <img class="rel-rend-img" src=${recipeInfo.recipe.image_url} alt="${recipeInfo.recipe.name}">
                         </div>
                         <div class="rel-h3">
                             <h3>${recipeInfo.recipe.name}</h3>

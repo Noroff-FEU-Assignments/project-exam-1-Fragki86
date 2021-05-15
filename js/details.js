@@ -71,19 +71,19 @@ function allDetails(details) {
                 <div class="recipe-details-container">
                     <h1>${details.recipe.name}</h1>
                     <div class="img-info-grid">
-                        <img class="details-img" src="${details.recipe.image_url}">
+                        <img class="details-img" src="${details.recipe.image_url}" alt="${details.recipe.name}">
                         <h2>- Info -</h2>
                         <div class="recipe-info">
                             ${details.recipe.summary}
                             <div class="cooking-info">
                                 <div class="cook-time">
-                                    <img src="images/Icon-stopwatch.png"><p>${details.recipe.total_time}'<p>
+                                    <img src="images/Icon-stopwatch.png" alt="stopwatch"><p>${details.recipe.total_time}'<p>
                                 </div>
                                 <div class="difficulty">
-                                    <img src="images/Icon-chef.png"><p>${details.recipe.custom_time_label}</p>
+                                    <img src="images/Icon-chef.png" alt="chefs-hat"><p>${details.recipe.custom_time_label}</p>
                                 </div>
                                 <div class="portions">
-                                    <img src="images/Icon-spoon-fork.png"><p>${details.recipe.servings}</p>
+                                    <img src="images/Icon-spoon-fork.png" alt="spoon and fork"><p>${details.recipe.servings}</p>
                                 </div>
                             </div>
                         </div>
@@ -96,13 +96,13 @@ function allDetails(details) {
                         <div class="tab-content" id="method-mobile">
                             <ul>${method}</ul>
                             <div id="good-luck">
-                                <img src="images/star.png"><h4>Good Luck</h4><img src="images/star.png">
+                                <img src="images/star.png" alt="star"><h4>Good Luck</h4><img src="images/star.png" alt="star">
                             </div>
                         </div>
                         <div class="tab-content" id="ingredients-mobile">
                             ${ingredients}
                             <div id="good-luck">
-                                <img src="images/star.png"><h4>Good Luck</h4><img src="images/star.png">
+                                <img src="images/star.png" alt="star"><h4>Good Luck</h4><img src="images/star.png" alt="star"> 
                             </div>
                         </div>
                     </div>
@@ -111,7 +111,7 @@ function allDetails(details) {
                                 <h2>- Method -</h2>
                                 <ul>${method}</ul>
                                 <div id="good-luck">
-                                    <img src="images/star.png"><h4>Good Luck</h4><img src="images/star.png">
+                                    <img src="images/star.png" alt="star"><h4>Good Luck</h4><img src="images/star.png" alt="star">
                                 </div>
                             </div>
                             <div class="ingredients">
@@ -122,7 +122,7 @@ function allDetails(details) {
                 </div>`
         
 
-        biggerImage.innerHTML = `<img class="zoomed-img" src="${details.recipe.image_url}">`
+        biggerImage.innerHTML = `<img class="zoomed-img" src="${details.recipe.image_url}" alt="${details.recipe.name}">`
 
 
 /* ----------------- Change the page title ----------------- */

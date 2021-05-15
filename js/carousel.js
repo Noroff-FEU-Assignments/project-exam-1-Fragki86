@@ -23,7 +23,7 @@ async function getCarousel() {
                         </div>
                         <div class="par">
                             
-                            <img src="${carInfo.recipe.image_url}">
+                            <img src="${carInfo.recipe.image_url}" alt="${carInfo.recipe.name}">
                             
                                 <div class="sub">
                                     <div class="info">
@@ -34,13 +34,13 @@ async function getCarousel() {
                                     </div>
                                     <div class="cooking-info-carousel">
                                         <div class="cook-time-car">
-                                            <img src="images/Icon-stopwatch.png"><p>${carInfo.recipe.total_time}'<p>
+                                            <img src="images/Icon-stopwatch.png" alt="stopwatch"><p>${carInfo.recipe.total_time}'<p>
                                         </div>
                                         <div class="difficulty-car">
-                                            <img src="images/Icon-chef.png"><p>${carInfo.recipe.custom_time_label}</p>
+                                            <img src="images/Icon-chef.png" alt="chefs-hat"><p>${carInfo.recipe.custom_time_label}</p>
                                         </div>
                                         <div class="portions-car">
-                                            <img src="images/Icon-spoon-fork.png"><p>${carInfo.recipe.servings}</p>
+                                            <img src="images/Icon-spoon-fork.png" alt="spoon and fork"><p>${carInfo.recipe.servings}</p>
                                         </div>
                                     </div>
                                 </div>
