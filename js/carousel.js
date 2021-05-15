@@ -52,10 +52,11 @@ async function getCarousel() {
         const prevBtn = document.querySelector("#prev-slide");
         const nextBtn = document.querySelector("#next-slide");
 
-        nextBtn.addEventListener("click", () => {
+        nextBtn.addEventListener("click", (e) => {
             if (offset >= 12 && offset < 14) {
                 offset++
             }
+            e.preventDefault();
             getCarousel();
         
         });
