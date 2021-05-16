@@ -1,5 +1,5 @@
 /* --------------------------- Global  Styles --------------------------- */
-:root {
+/* :root {
     --light-brown: rgb(164, 115, 67);
     --dark-brown: rgb(111, 67, 35);
     --black-brown: rgb(56, 36, 29);
@@ -38,7 +38,7 @@ footer {
     width: 100%;
     background-color: var(--light-gray);
     margin-top: 150px;
-}
+} */
 
 .logo-m, .logo-d, .logos {
     display: block;
@@ -48,14 +48,14 @@ footer {
 }
 
 
-.section-with-separator {
+/* .section-with-separator {
     background-color: var(--light-gray);
     padding-bottom: 20px;
 }
 
 .section-with-separator h2 {
     padding-top: 20px;
-}
+} */
 
 
 h1, h2, h3, h4 {
@@ -96,20 +96,20 @@ p {
 
 /* No Show 
 ------------------------------- */
-.logo-d {
+/* .logo-d {
     display: none;
 }
 
 .method-ingre-grid{
     display: none;
-}
+} */
 /*------------------------------*/
 
 
-header {
+/* header {
     position: sticky;
     top: -1px;
-}
+} */
 
 .logos {
     width: 50%;
@@ -128,9 +128,9 @@ header {
     padding-left: 15px;
 }
 
-.mobile-menu {
+/* .mobile-menu {
     padding-right: 15px;
-}
+} */
 
 
 
@@ -150,7 +150,7 @@ header {
 
 /* Footer 
 ------------------------------- */
-.footer-container {
+/* .footer-container {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -218,14 +218,14 @@ footer p {
     color: var(--dark-brown);
     font-weight: 600;
     font-size: 0.8rem;
-}
+} */
 
 
 
 
 /* Titles & paragraphs 
 ------------------------------- */
-h1 {
+/* h1 {
     font-size: 1.9rem;
 }
 
@@ -239,13 +239,13 @@ h3 {
 
 p {
     font-size: 0.9rem;
-}
+} */
 
 
 
 /* NAV 
 ------------------------------- */
-nav {
+/* nav {
     width: 100%;
     animation-name: fade-in;
     z-index: 100;
@@ -284,12 +284,12 @@ nav {
 
 .current {
     font-weight: 600;
-}
+} */
 
 
 /* Carousel 
 ------------------------------- */
-.carousel-container {
+/* .carousel-container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -383,13 +383,13 @@ nav {
 
 .active-dot {
     background-color: var(--dark-brown);
-}
+} */
 
 
 
 /* Home page 
 ------------------------------- */
-#latestRecipes h2 {
+/* #latestRecipes h2 {
     margin-bottom: 10px;
 }
 
@@ -438,14 +438,14 @@ nav {
 .wonderings img {
     width: 100%;
     margin-top: 30px;
-}
+} */
 
 
 
 
 /* Recipes Page
 ------------------------------------------ */
-.recipes-list a{
+/* .recipes-list a{
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -488,14 +488,14 @@ nav {
     color: var(--black-brown);
     padding-left: 5px;
     font-size: 0.9rem;
-}
+} */
 
 
 
 
 /* Details Page
 ------------------------------- */
-.img-info-grid {
+/* .img-info-grid {
     margin: -10px auto;
     width: 80%;
     display: flex;
@@ -539,25 +539,25 @@ nav {
 .recipe-info .cooking-info {
     border: none;
     padding-top: 20px;
-}
+} */
 
 
 
-.tabs {
+/* .tabs {
     width: 100%;
     overflow: hidden;
-    /* border-top: 1px solid var(--dark-brown); */
+    border-top: 1px solid var(--dark-brown);
     
-}
+} */
   
-.tab-button {
+/* .tab-button {
     float: left;
-    border: 1px solid var(--black-brown);
+    border: 1px solid var(--black-brown); */
     /* outline: none; */
     /* border-bottom: none;
     border-left: none;
     border-right: none; */
-    width: 50%;
+    /* width: 50%;
     padding: 6px 40px;
     transition: 0.3s;
     font-family: var(--titles);
@@ -566,9 +566,9 @@ nav {
     color: var(--dark-brown);
     background-color: var(--light-gray);
     box-shadow: 0px 0px 5px inset;
-}
+} */
   
-.tabs button.active {
+/* .tabs button.active {
     display: block;
     background-color: white;
     border-bottom: none;
@@ -583,7 +583,7 @@ nav {
     padding: 20px 0px;
     border-top: none;
     margin: 3px auto;
-}
+} */
 
 /* #ingredients-mobile {
     display: block;
@@ -599,7 +599,7 @@ nav {
     padding-left: 40px;
 } */
 
-.ingredients-u-list {
+/* .ingredients-u-list {
     display: list-item;
     list-style-position: inside;
     list-style-type: disc;
@@ -610,7 +610,7 @@ nav {
 .ingredients-u-list span {
     font-weight: bold;
     color: var(--black-brown);
-}
+} */
 
 
 /* .ingredients-table td{
@@ -620,7 +620,7 @@ nav {
     
 } */
 
-#method-mobile {
+/* #method-mobile {
     list-style-type: decimal;
     width: 90%;
     counter-reset: p;
@@ -694,14 +694,14 @@ nav {
     color: var(--light-brown);
     font-family: var(--paragraph);
     
-}
+} */
 
 
 
 
 /* Contact Page
 ------------------------------- */
-#success-message {
+/* #success-message {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -769,15 +769,15 @@ nav {
     display: none;
     font-size: 0.6rem;
     color: rgb(211, 27, 27);
-}
+} */
 
 
 /* About us
 ------------------------------- */
-#about {
+/* #about {
     width: 80%;
     margin: 0px auto;
-    /* position: relative; */
+    position: relative;
 
 }
 
@@ -785,7 +785,7 @@ nav {
     display: block;
     margin: 30px auto;
     width: 40%
-    /* clip-path: circle(160px at center); */
+    clip-path: circle(160px at center);
 }
 
 .text p{
@@ -793,7 +793,7 @@ nav {
 }
 
 
-}
+} */
 
 
 /* --------------------------- Tablet Styles ---------------------------  */
