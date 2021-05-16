@@ -1164,7 +1164,7 @@ footer p {
 
 /* Details Page
 ------------------------------- */
-.img-info-grid {
+/* .img-info-grid {
     margin: -10px auto;
     width: 80%;
     display: grid;
@@ -1263,7 +1263,7 @@ footer p {
 .ingredients {
     width: 80%;
     margin: 0px auto;
-}
+} */
 
 /* .ingredients-table {
     width: 100%;
@@ -1287,7 +1287,7 @@ footer p {
     font-family: var(--paragraph);
 } */
 
-.ingredients-u-list {
+/* .ingredients-u-list {
     display: list-item;
     list-style-position: inside;
     list-style-type: disc;
@@ -1328,12 +1328,12 @@ footer p {
 
 .rel-h3 h3{
     margin-top: 5px;
-}
+} */
 
 
 /* Contact Page
 ------------------------------- */
-#success-message {
+/* #success-message {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -1407,7 +1407,7 @@ footer p {
     display: none;
     font-size: 0.6rem;
     color: rgb(211, 27, 27);
-}
+} */
 
 
 
