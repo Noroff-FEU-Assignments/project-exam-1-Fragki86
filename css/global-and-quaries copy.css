@@ -58,7 +58,7 @@ footer {
 } */
 
 
-h1, h2, h3, h4 {
+/* h1, h2, h3, h4 {
     font-family: var(--titles);
     color: var(--dark-brown);
     text-align: center;
@@ -78,18 +78,18 @@ h2 {
 h3 {
     font-weight: 500;
     font-size: 1.3vw;
-}
+} */
 
 /* h4 {
     font-style: italic;
     font-size: 1.3vw;
 } */
 
-p {
+/* p {
     font-family: var(--paragraph);
     color: var(--dark-brown);
     font-size: 1rem;
-}
+} */
 
 /* --------------------------- Mobile  Styles --------------------------- */
 @media only screen and (max-width:768px) {
@@ -810,7 +810,7 @@ p {
 
 /* No Show 
 ------------------------------- */
-.logo-m {
+/* .logo-m {
     display: none;
 }
 
@@ -820,14 +820,14 @@ p {
 
 .tab-content, .tabs {
     display: none;
-}
+} */
 
 
 
-#header-container {
+/* #header-container {
     width: 80%;
     padding-bottom: 10px;
-}
+} */
 
 
 
@@ -835,7 +835,7 @@ p {
 
 /* NAV 
 ------------------------------- */
-nav {
+/* nav {
     width: 80%;
     margin: 0px auto;
     border-bottom: 1px solid var(--dark-brown);
@@ -864,13 +864,13 @@ nav {
 .current {
     font-weight: 600;
     text-decoration: underline 2.5px;
-}
+} */
 
 
 
 /* Carousel 
 ------------------------------- */
-.carousel-container {
+/* .carousel-container {
     width: 80%;
     margin: 0px auto 10px auto;
     border: 1px solid var(--black-brown);
@@ -984,7 +984,7 @@ nav {
 
 .active-dot {
     background-color: var(--dark-brown);
-}
+} */
 
 
 
@@ -993,7 +993,7 @@ nav {
 
 /* Footer 
 ------------------------------- */
-.footer-container {
+/* .footer-container {
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1051,7 +1051,7 @@ footer p {
     color: var(--dark-brown);
     font-weight: 600;
     font-size: 0.8rem;
-}
+} */
 
 
 
@@ -1063,7 +1063,7 @@ footer p {
 } */
 
 
-#latestRecipes h2 {
+/* #latestRecipes h2 {
     margin: 15px auto 10px auto;
 }
 
@@ -1105,11 +1105,11 @@ footer p {
 .wonderings h3 {
     text-decoration: underline 1px;
     text-align: left;
-}
+} */
 
 /* Recipes Page
 ------------------------------- */
-.recipes-list {
+/* .recipes-list {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     justify-content: center;
@@ -1155,7 +1155,7 @@ footer p {
     color: var(--black-brown);
     padding-left: 5px;
     font-size: 1.1rem;
-}
+} */
 
 
 
