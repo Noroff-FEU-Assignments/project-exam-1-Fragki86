@@ -588,7 +588,7 @@ p {
 
 .rel-h3 h3{
     margin: 0.5rem auto 3rem auto;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .td-1 {
@@ -1303,6 +1303,7 @@ nav {
 
 .rel-h3 h3{
     margin-top: 5px;
+    font-size: 1.2rem;
 }
 
 
