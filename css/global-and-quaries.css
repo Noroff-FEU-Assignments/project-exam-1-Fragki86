@@ -156,6 +156,9 @@ footer p {
 
 
 
+
+
+
 /* Button adjustments 
 ------------------------------- */
 .btn-style {
@@ -937,7 +940,6 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 80% 20%;
-    border-left: 1px solid var(--dark-brown);
     width: 50%;
     right: 0px;
     height: 100%;
@@ -947,25 +949,25 @@ nav {
 
 .sub h2 {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-decoration: underline 1px;   
 }
 
 .info {
-    /* position: absolute; */
-    position: relative;
+    position: absolute;
+    /* position: relative;
     left: 90px;
-    top: 50px;
+    top: 50px; */
     display: flex;
     flex-direction: column;
     grid-row: 1;
-    /* top: 50px;
-    right: 65px; */
+    top: 0px;
+    right: 65px;
     width: 60%;
 }
 
 .info p {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .cooking-info-carousel {
