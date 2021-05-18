@@ -913,6 +913,7 @@ nav {
     margin: 0px auto 10px auto;
     border: 1px solid var(--black-brown);
     position: relative;
+    min-height: 400px;
 }
 
 .par {
