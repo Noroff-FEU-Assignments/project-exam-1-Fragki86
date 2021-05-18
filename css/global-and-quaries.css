@@ -861,6 +861,100 @@ nav {
     padding-bottom: 10px;
 }
 
+.carousel-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto 10px auto;
+    border-top: 1px solid var(--black-brown);
+    border-bottom: 1px solid var(--black-brown);
+    position: relative;
+}
+
+.par img {
+    width: 100%;
+}
+
+
+.sub {
+    width: 100%;
+    background-color: white;
+}
+
+.sub h2 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-decoration: underline 1px;   
+    margin: 10px auto;
+}
+
+.info {
+    width: 80%;
+    margin: 2px auto;
+}
+
+.info p {
+    width: 95%;
+    margin: 2px auto;
+}
+
+.cooking-info-carousel {
+    display: flex;
+    width: 80%;
+    margin: 5px auto;
+    justify-self: end;
+    justify-content: space-evenly;
+}
+
+.cooking-info-carousel div {
+    display: flex;
+    align-items: center;
+}
+
+.cooking-info-carousel p {
+    font-family: var(--paragraph);
+    color: var(--black-brown);
+    padding-left: 5px;
+    font-size: 1rem;
+}
+
+.carousel-buttons {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-buttons button {
+    width: 1.8rem;
+    font-size: 2rem;
+    height: 100px;
+    border: none;   
+    background-color: white;
+    padding: 0px 0px;
+}
+
+.dots-container {
+    display: flex;
+    width: 20%;
+    margin: 0px auto 40px auto;
+    justify-content: space-between;
+}
+
+.dots-container span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--dark-brown);
+    border-radius: 50%;
+}
+
+.active-dot {
+    background-color: var(--dark-brown);
+}
 
 
 
@@ -868,7 +962,7 @@ nav {
 
 /* Carousel 
 ------------------------------- */
-.carousel-container {
+/* .carousel-container {
     width: 90%;
     margin: 0px auto 40px auto;
     border: 1px solid var(--black-brown);
@@ -955,7 +1049,6 @@ nav {
     z-index: 1;
     top: 50%;
     transform: translateY(-50%);
-    /* height: 8rem; */
 }
 
 .carousel-buttons button {
@@ -972,7 +1065,7 @@ nav {
     width: 8%;
     margin: 0px auto 40px auto;
     justify-content: space-between;
-}
+} */
 
 /* .dots-container span {
     display: block;
@@ -1115,6 +1208,11 @@ nav {
 
 /* Details Page
 ------------------------------- */
+.recipe-details-container h1 {
+    margin-bottom: 25px;
+}
+
+
 .img-info-grid {
     margin: -10px auto;
     width: 90%;
