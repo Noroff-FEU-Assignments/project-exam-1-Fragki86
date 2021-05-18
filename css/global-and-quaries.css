@@ -923,6 +923,7 @@ nav {
 .par img {
     width: 65%;
     object-fit: contain;
+    min-height: 100%;
 }
 
 .carousel-main-img {
