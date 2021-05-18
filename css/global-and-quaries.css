@@ -1068,14 +1068,14 @@ nav {
 .wonderings {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 60px;
+    column-gap: 30px;
     width: 80%;
     margin: 0px auto;
 }
 
-.wonderings p {
+/* .wonderings p {
     width: 90%;
-}
+} */
 
 .cooking-tips h3, .wonderings h3 {
     text-decoration: underline;
