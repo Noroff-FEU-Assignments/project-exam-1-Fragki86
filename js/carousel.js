@@ -23,7 +23,7 @@ async function getCarousel() {
                         </div>
                         <div class="par">
                             
-                            <img src="${carInfo.recipe.image_url}" alt="${carInfo.recipe.name}">
+                            <img src="${carInfo.recipe.image_url}" alt="${carInfo.recipe.name}" class="carousel-main-img">
                             
                                 <div class="sub">
                                     <div class="info">

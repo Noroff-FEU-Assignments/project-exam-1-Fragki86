@@ -924,6 +924,11 @@ nav {
     width: 65%;
 }
 
+.carousel-main-img {
+    min-height: 100%;
+    object-fit: contain;
+}
+
 
 .sub {
     position: absolute;
