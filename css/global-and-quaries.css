@@ -734,11 +734,12 @@ nav {
     right: 0;
     top: 145px;
     width: 100%;
-    height: 600px;
+    height: 300px;
     justify-content: space-evenly;
     background-color:var(--light-gray);
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
+    overflow-x: hidden;
 }
 
 .nav-visible {
@@ -752,7 +753,7 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: var(--dark-brown);
     font-family: var(--titles);
 }
