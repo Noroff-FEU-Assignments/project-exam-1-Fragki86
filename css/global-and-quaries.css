@@ -867,9 +867,9 @@ nav {
 
 .carousel-container {
     width: 90%;
-    /* display: flex;
+    display: grid;
     flex-direction: row;
-    margin: 0px auto 10px auto; */
+    margin: 0px auto 10px auto;
     /* border-top: 1px solid var(--black-brown); */
     border-bottom: 1px solid var(--black-brown);
     position: relative;
@@ -882,13 +882,24 @@ nav {
 }
 
 .par img {
-    width: 40%;
+    width: 62%;
 }
 
+.carousel-main-img {
+    object-fit: contain;
+    min-height: 100%;
+}
 
 .sub {
-    width: 100%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80% 20%;
+    width: 56%;
+    right: 0px;
+    height: 100%;
     background-color: white;
+    clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 15% 100%);
 }
 
 .sub h2 {
