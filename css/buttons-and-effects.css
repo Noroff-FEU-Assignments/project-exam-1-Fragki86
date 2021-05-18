@@ -14,13 +14,11 @@
 ------------------------------- */
 .btn-style {
     margin: 40px auto;
-    /* width: 40%; */
     height: 40px;
     display: block;
     border: none;
     border-radius: 50px;
     font-family: var(--titles);
-    /* font-size: 1.5rem; */
     font-weight: 500;
     color: white;
     background-color: var(--dark-brown);
