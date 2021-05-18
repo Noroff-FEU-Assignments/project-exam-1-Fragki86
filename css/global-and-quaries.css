@@ -1092,14 +1092,15 @@ nav {
     margin: 0px auto;
 }
 
+.recipes-list a {
+    width: 90%;
+}
+
 .ind-h2 h2{
     font-size: 1.5vw;
 }
 
-.individual-container {
-    width: 100%;
-    min-width: 300px;
-}
+
 
 
 .individual-container:hover {
