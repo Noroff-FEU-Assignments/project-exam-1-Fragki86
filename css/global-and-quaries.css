@@ -800,9 +800,9 @@ nav {
 
 
 
-/*769 - 1023*/
+/*769 - 1023 //1449*/
 /* --------------------------- Tablet Styles ---------------------------  */
-@media only screen and (min-width:769px) and (max-width:1449px) {
+@media only screen and (min-width:769px) and (max-width:1600px) {
 /* No Show 
 ------------------------------- */
 .logo-d {
@@ -1005,7 +1005,7 @@ nav {
 
 /*1024*/
 /* --------------------------- Desktop Styles --------------------------- */
-@media only screen and (min-width:1450px) {
+@media only screen and (min-width:1601px) {
 /* No Show 
 ------------------------------- */
 .logo-m {
