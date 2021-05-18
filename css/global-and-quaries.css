@@ -913,7 +913,6 @@ nav {
     margin: 0px auto 10px auto;
     border: 1px solid var(--black-brown);
     position: relative;
-    min-height: 400px;
 }
 
 .par {
@@ -923,11 +922,11 @@ nav {
 
 .par img {
     width: 65%;
-    object-fit: contain;
-    min-height: 100%;
+    
 }
 
 .carousel-main-img {
+    object-fit: contain;
     min-height: 100%;
     
 }
