@@ -423,6 +423,7 @@ p {
 
 .details-img {
     box-shadow: 0px 0px 7px var(--black-brown);   
+    cursor: pointer;
 }
 
 .bigger-img {
@@ -710,7 +711,7 @@ p {
 
 /* 768 */
 /* --------------------------- Mobile  Styles --------------------------- */
-@media only screen and (max-width:1023px) {
+@media only screen and (max-width:768px) {
 /* No Show 
 ------------------------------- */
 .logo-d {
@@ -791,22 +792,220 @@ nav {
 
 }
 
-
-
-
-
-
 /* --------------------------- Tablet Styles ---------------------------  */
-/* @media only screen and (min-width:769px) and (max-width:1023px) {
+/* @media only screen and (min-width:769px) and (max-width:1449px) {
 
 
 } */
 
 
 
+/*769 - 1023*/
+/* --------------------------- Tablet Styles ---------------------------  */
+@media only screen and (min-width:769px) and (max-width:1449px) {
+/* No Show 
+------------------------------- */
+.logo-d {
+    display: none;
+}
 
+.search-icon, .mobile-menu {
+    display: none;
+}
+
+.tab-content, .tabs {
+    display: none;
+}
+/*----------------------------- */
+
+
+
+/* NAV 
+------------------------------- */
+nav {
+    width: 80%;
+    margin: 0px auto;
+    border-bottom: 1px solid var(--dark-brown);
+    padding: 1px 0px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2px auto;
+}
+
+.nav-links a, li {
+    list-style: none;
+    color: var(--dark-brown);
+    font-family: var(--titles);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.nav-links a:hover:not(.current)  {
+    text-decoration: underline;
+}
+
+.current {
+    text-decoration: underline;
+}
+
+
+
+/* Header 
+------------------------------- */
+#header-container {
+    width: 80%;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+/* Carousel 
+------------------------------- */
+.carousel-container {
+    width: 80%;
+    margin: 0px auto 10px auto;
+    border: 1px solid var(--black-brown);
+    position: relative;
+    min-width: 900px;
+}
+
+.par {
+    display: flex;
+    position: relative;
+}
+
+.par img {
+    width: 62%;
+    
+}
+
+.carousel-main-img {
+    object-fit: contain;
+    min-height: 100%;
+    
+}
+
+
+.sub {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80% 20%;
+    width: 56%;
+    right: 0px;
+    height: 100%;
+    background-color: white;
+    clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 15% 100%);
+}
+
+.sub h2 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-decoration: underline 1px;   
+}
+
+.info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    grid-row: 1;
+    top: 0px;
+    right: 60px;
+    width: 60%;
+}
+
+.info p {
+    font-size: 0.86rem;
+}
+
+.cooking-info-carousel {
+    display: flex;
+    position: relative;
+    left: 50px;
+    bottom: 10px;
+    border-top: 1px solid var(--dark-brown);
+    grid-row: 2;
+    width: 70%;
+    min-width: 200px;
+    justify-self: end;
+    justify-content: space-evenly;
+}
+
+.cooking-info-carousel div {
+    display: flex;
+    align-items: center;
+}
+
+.cooking-info-carousel p {
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+.carousel-buttons {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    /* height: 8rem; */
+}
+
+.carousel-buttons button {
+    width: 2.5rem;
+    background-color: rgba(255, 255, 255, .65);
+    font-size: 3rem;
+    border: none;   
+    cursor: pointer;
+    max-height: 90px;
+}
+
+#prev-slide:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#next-slide:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.dots-container {
+    display: flex;
+    width: 8%;
+    margin: 0px auto 40px auto;
+    justify-content: space-between;
+}
+
+.dots-container span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--dark-brown);
+    border-radius: 50%;
+}
+
+.active-dot {
+    background-color: var(--dark-brown);
+}
+
+
+
+
+
+
+}
+
+
+
+/*1024*/
 /* --------------------------- Desktop Styles --------------------------- */
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width:1450px) {
 /* No Show 
 ------------------------------- */
 .logo-m {
@@ -933,7 +1132,6 @@ nav {
     min-height: 100%;
     
 }
-
 
 .sub {
     position: absolute;
@@ -1119,6 +1317,10 @@ nav {
 
 }
 
+
+
+
+
 /* Recipes Page
 ------------------------------- */
 .recipes-list {
@@ -1200,7 +1402,7 @@ nav {
 
 .recipe-info .cooking-info {
     border: none;
-    padding-top: 80px;
+    padding-top: 70px;
 }
 
 .method-ingre-grid {
