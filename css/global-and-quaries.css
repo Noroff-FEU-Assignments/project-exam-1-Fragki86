@@ -844,9 +844,9 @@ nav {
     font-weight: 600;
 }
 
-.nav-links a:hover:not(.current)  {
+/* .nav-links a:hover:not(.current)  {
     text-decoration: underline;
-}
+} */
 
 .current {
     text-decoration: underline;
@@ -869,11 +869,11 @@ nav {
 /* Carousel 
 ------------------------------- */
 .carousel-container {
-    width: 80%;
+    width: 90%;
     margin: 0px auto 40px auto;
     border: 1px solid var(--black-brown);
     position: relative;
-    min-width: 900px;
+    /* min-width: 900px; */
 }
 
 .par {
@@ -1072,6 +1072,7 @@ nav {
     width: 80%;
     margin: 0px auto;
 }
+
 
 /* .wonderings p {
     width: 90%;
