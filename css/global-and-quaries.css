@@ -176,7 +176,6 @@ h1, h2, h3, h4 {
     text-align: center;
 }
 
-
 h1 {
     font-size: 1.9rem;
     text-decoration: underline;
@@ -194,6 +193,7 @@ h3 {
 p {
     font-size: 0.9rem;
     font-family: var(--paragraph);
+    color: var(--black-brown);
 }
 
 
@@ -711,7 +711,7 @@ p {
 
 /* 768 */
 /* --------------------------- Mobile  Styles --------------------------- */
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:964px) {
 /* No Show 
 ------------------------------- */
 .logo-d {
@@ -802,7 +802,7 @@ nav {
 
 /*769 - 1023 //1449*/
 /* --------------------------- Tablet Styles ---------------------------  */
-@media only screen and (min-width:769px) and (max-width:1600px) {
+@media only screen and (min-width:965px) and (max-width:1600px) {
 /* No Show 
 ------------------------------- */
 .logo-d {
@@ -869,7 +869,7 @@ nav {
 ------------------------------- */
 .carousel-container {
     width: 80%;
-    margin: 0px auto 10px auto;
+    margin: 0px auto 40px auto;
     border: 1px solid var(--black-brown);
     position: relative;
     min-width: 900px;
@@ -968,14 +968,6 @@ nav {
     max-height: 90px;
 }
 
-#prev-slide:hover {
-    background-color: rgba(255, 255, 255, 1);
-}
-
-#next-slide:hover {
-    background-color: rgb(240, 240, 240);
-}
-
 .dots-container {
     display: flex;
     width: 8%;
@@ -983,7 +975,7 @@ nav {
     justify-content: space-between;
 }
 
-.dots-container span {
+/* .dots-container span {
     display: block;
     width: 15px;
     height: 15px;
@@ -993,7 +985,10 @@ nav {
 
 .active-dot {
     background-color: var(--dark-brown);
-}
+} */
+
+
+
 
 
 /* Footer 
@@ -1063,12 +1058,13 @@ nav {
     width: 80%;
     display: flex;
     flex-direction: row;
+    gap: 60px;
 }
 
 .wonderings {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 30px;
+    column-gap: 60px;
     width: 80%;
     margin: 0px auto;
 
@@ -1394,7 +1390,7 @@ h4 {
 
 p {
     font-family: var(--paragraph);
-    color: var(--dark-brown);
+    /* color: var(--black-brown); */
     font-size: 1rem;
 }
 
