@@ -848,9 +848,9 @@ p {
 
   .sub {
     position: absolute;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80% 20%;
+    grid-template-rows: 80% 20%; */
     width: 56%;
     right: 0px;
     height: 100%;
@@ -1308,7 +1308,7 @@ p {
   /* -------------------------------- */
 
 
-  
+
   /* Header 
 ------------------------------- */
   #header-container {
