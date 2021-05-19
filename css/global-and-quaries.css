@@ -1513,4 +1513,56 @@ p {
   .active-dot {
     background-color: var(--dark-brown);
   } */
+
+
+
+
+
+/* Recipes Page
+------------------------------- */
+  .recipes-list {
+    width: 80%;
+    gap: 30px;
+  }
+
+
+
+  /* Details Page
+------------------------------- */
+
+  .img-info-grid {
+    width: 80%;
+  }
+
+
+  /* .details-img {
+    min-width: 730px;
+} */
+
+
+  .recipe-info .cooking-info {
+    padding-top: 70px;
+  }
+
+  .method-ingre-grid {
+    width: 80%;
+  }
+
+
+  .method p::before {
+    font-size: 1.2rem;
+  }
+
+
+  .related-courses,
+  .favorite-recipes {
+    column-gap: 60px;
+  }
+
+  .rel-h3 h3 {
+    margin-top: 5px;
+    font-size: 1.4rem;
+  }
+
+
 }
