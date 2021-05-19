@@ -18,8 +18,8 @@ async function getCarousel() {
 
             carousel.innerHTML += `
                         <div class="carousel-buttons">
-                            <button id="prev-slide"><i class="fas fa-angle-left"></i></button>
-                            <button id="next-slide"><i class="fas fa-angle-right"></i></button>
+                            <button id="prev-slide"><i class="fas fa-angle-left" aria-label="previous slide"></i></button>
+                            <button id="next-slide"><i class="fas fa-angle-right" aria-label="previous slide"></i></button>
                         </div>
                         <div class="par">
                             
@@ -52,13 +52,16 @@ async function getCarousel() {
         const prevBtn = document.querySelector("#prev-slide");
         const nextBtn = document.querySelector("#next-slide");
 
-        nextBtn.addEventListener("click", (e) => {
+        nextBtn.addEventListener("click", () => {
             if (offset >= 12 && offset < 14) {
                 offset++
+            } else if (offset === 14) {
+                offset === 12
             }
-            e.preventDefault();
+
+            
             getCarousel();
-        
+            
         });
         
         prevBtn.addEventListener("click", () => {
@@ -68,7 +71,13 @@ async function getCarousel() {
             getCarousel();
         });
 
+        if (offset === 12) {
+            prevBtn.style.opacity = "0";
+        }
 
+        if (offset === 14) {
+            nextBtn.style.display = "none";
+        }
 
        /* ----------------- Dots functionality ----------------- */
         

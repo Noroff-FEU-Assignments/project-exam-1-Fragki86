@@ -9,8 +9,13 @@ async function getFavorite() {
         console.log(recipesExtra)
         favoriteRecipesContainer.innerHTML = "";
 
+        // randomJoke(arr) {
+        //     var joke = arr[Math.floor(Math.random()*arr.length)];
+        //     this.setState({jokes: [joke] });
+        //  }
 
         recipesExtra.forEach(function(recipeInfo) {
+
             favoriteRecipesContainer.innerHTML  +=`
                     <a href="recipe-details.html?id=${recipeInfo.id}">
                     <div class="related-recipes-container">
