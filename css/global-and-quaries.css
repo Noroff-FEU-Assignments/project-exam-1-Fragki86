@@ -857,7 +857,7 @@ p {
   }
 
   .sub {
-    /* position: absolute; */
+    position: absolute;
     /* display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 80% 20%; */
@@ -877,7 +877,7 @@ p {
   }
 
   .info {
-    /* position: absolute; */
+    position: absolute;
     /* display: flex;
     flex-direction: column; */
     /* grid-row: 1; */
@@ -892,7 +892,7 @@ p {
 
   .cooking-info-carousel {
     display: flex;
-    /* position: absolute; */
+    position: absolute;
     right: 50px;
     bottom: 10px;
     border-top: 1px solid var(--dark-brown);
@@ -914,7 +914,7 @@ p {
   }
 
   .carousel-buttons {
-    /* position: absolute; */
+    position: absolute;
     width: 100%;
     display: flex;
     justify-content: space-between;
