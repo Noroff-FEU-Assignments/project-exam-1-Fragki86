@@ -962,14 +962,14 @@ p {
 
 
 
-  .carousel-container {
+  /* .carousel-container {
     display: block;
     width: 90%;
     
     margin: 0px auto 40px auto;
-    border: 1px solid var(--black-brown);
+    border: 1px solid var(--black-brown); */
     /* position: relative; */
-  }
+  /* }
 
   .par {
     display: flex;
@@ -985,13 +985,13 @@ p {
   }
 
   .sub {
-    position: absolute;
+    position: absolute; */
     /* display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 80% 20%; */
     /* z-index: 100; */
     /* display: flex; */
-    width: 56%;
+    /* width: 56%;
     right: 0px;
     height: 100%;
     background-color: white;
@@ -1005,11 +1005,11 @@ p {
   }
 
   .info {
-    position: absolute;
+    position: absolute; */
     /* display: flex;
     flex-direction: column; */
     /* grid-row: 1; */
-    top: 0px;
+    /* top: 0px;
     right: 60px;
     width: 60%;
   }
@@ -1065,7 +1065,7 @@ p {
     width: 8%;
     margin: 0px auto 40px auto;
     justify-content: space-between;
-  }
+  } */
 
   /* .dots-container span {
     display: block;
