@@ -732,7 +732,7 @@ p {
     background-color: white;
     border-bottom: 1px solid var(--dark-brown);
     transform: translateY(-102%);
-    transition: transform 0.3s ease-in;
+    transition: transform 0.4s ease-in;
     z-index: -1;
   }
 
@@ -830,7 +830,7 @@ p {
     width: 90%;
     margin: 0px auto 40px auto;
     border: 1px solid var(--black-brown);
-    position: relative;
+    /* position: relative; */
   }
 
   .par {
@@ -839,7 +839,7 @@ p {
   }
 
   .par img {
-    width: 62%;
+    width: 10%;
   }
 
   .carousel-main-img {
@@ -1368,22 +1368,14 @@ p {
 ------------------------------- */
   nav {
     width: 80%;
-    margin: 0px auto;
-    border-bottom: 1px solid var(--dark-brown);
-    padding: 2px 0px;
   }
 
   .nav-links {
-    display: flex;
-    justify-content: space-evenly;
     margin: 5px 140px;
   }
 
   .nav-links a,
   li {
-    list-style: none;
-    color: var(--dark-brown);
-    font-family: var(--titles);
     font-size: 1.3rem;
     font-weight: 600;
   }
@@ -1392,8 +1384,130 @@ p {
     text-decoration: underline;
   }
 
-  .current {
-    text-decoration: underline;
+
+
+
+
+  /* Carousel 
+------------------------------- */
+  .carousel-container {
+    width: 80%;
+    /* position: relative; */
   }
 
+  /* .par {
+    display: flex;
+    position: relative;
+  } */
+
+  .par img {
+    width: 65%;
+  }
+
+  /* .carousel-main-img {
+    object-fit: contain;
+    min-height: 100%;
+  } */
+
+  .sub {
+    /* position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80% 20%; */
+    /* right: 0px;
+    height: 100%; */
+    clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 15% 100%);
+  }
+
+  .sub h2 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-decoration: underline 1px;
+  }
+
+  /* .info {
+    position: absolute;
+    position: relative;
+    left: 90px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    grid-row: 1;
+    top: 0px;
+    right: 65px;
+    width: 60%;
+  } */
+
+  .info p {
+    font-size: 1.1rem;
+  }
+
+  /* .cooking-info-carousel {
+    display: flex;
+    position: relative;
+    left: 80px;
+    bottom: 140px;
+    border-top: 1px solid var(--dark-brown);
+    grid-row: 2;
+    width: 60%;
+    justify-self: end;
+    justify-content: space-evenly;
+  } */
+
+  /* .cooking-info-carousel div {
+    display: flex;
+    align-items: center;
+  } */
+
+  .cooking-info-carousel p {
+    padding-left: 10px;
+    font-size: 1.1rem;
+  }
+
+  /* .carousel-buttons {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 8rem;
+  } */
+
+  /* .carousel-buttons button {
+    width: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.65);
+    font-size: 3rem;
+    border: none;
+    cursor: pointer;
+    max-height: 90px;
+  } */
+
+  #prev-slide:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  #next-slide:hover {
+    background-color: rgb(240, 240, 240);
+  }
+
+  /* .dots-container {
+    display: flex;
+    width: 8%;
+    margin: 0px auto 40px auto;
+    justify-content: space-between;
+  }
+
+  .dots-container span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--dark-brown);
+    border-radius: 50%;
+  }
+
+  .active-dot {
+    background-color: var(--dark-brown);
+  } */
 }
