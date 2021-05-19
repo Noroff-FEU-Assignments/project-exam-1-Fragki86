@@ -544,6 +544,10 @@ p {
   font-weight: bold;
   font-size: 1.1rem;
   color: var(--black-brown);
+  margin-left: -1.5em;
+  margin-right: 0.5em; 
+  text-align: right; 
+  direction: rtl;
 }
 
 #good-luck {
@@ -839,119 +843,119 @@ p {
   }
 
 
-  @media not all and (min-resolution:.001dpcm) {
+  /* @media not all and (min-resolution:.001dpcm) {
     @supports (-webkit-appearance:none) {
-        .carousel-container {
-            display: block;
-            width: 90%;
-            
-            margin: 0px auto 40px auto;
-            border: 1px solid var(--black-brown);
-            /* position: relative; */
-          }
         
-          .par {
-            display: flex;
-            position: relative;
-          }
-        
-          .par img {
-            width: 62%;
-          }
-        
-          .carousel-main-img {
-            object-fit: contain;
-          }
-        
-          .sub {
-            position: absolute;
-            /* display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 80% 20%; */
-            /* z-index: 100; */
-            /* display: flex; */
-            width: 56%;
-            right: 0px;
-            height: 100%;
-            background-color: white;
-            clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 15% 100%);
-          }
-        
-          .sub h2 {
-            font-weight: 500;
-            font-size: 1.8rem;
-            text-decoration: underline;
-          }
-        
-          .info {
-            position: absolute;
-            /* display: flex;
-            flex-direction: column; */
-            /* grid-row: 1; */
-            top: 0px;
-            right: 60px;
-            width: 60%;
-          }
-        
-          .info p {
-            font-size: 0.86rem;
-          }
-        
-          .cooking-info-carousel {
-            display: flex;
-            position: absolute;
-            right: 50px;
-            bottom: 10px;
-            border-top: 1px solid var(--dark-brown);
-            grid-row: 2;
-            width: 70%;
-            min-width: 200px;
-            justify-self: end;
-            justify-content: space-evenly;
-          }
-        
-          .cooking-info-carousel div {
-            display: flex;
-            align-items: center;
-          }
-        
-          .cooking-info-carousel p {
-            padding-left: 10px;
-            font-size: 1rem;
-          }
-        
-          .carousel-buttons {
-            position: absolute;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            z-index: 1;
-            top: 50%;
-            transform: translateY(-50%);
-          }
-        
-          .carousel-buttons button {
-            width: 2.5rem;
-            background-color: rgba(255, 255, 255, 0.65);
-            font-size: 3rem;
-            border: none;
-            cursor: pointer;
-            max-height: 90px;
-          }
-        
-          .dots-container {
-            display: flex;
-            width: 8%;
-            margin: 0px auto 40px auto;
-            justify-content: space-between;
-          }
 
 
     }
-}
+} */
   /* Carousel 
 ------------------------------- */
-  
+  .carousel-container {
+    display: block;
+    width: 90%;
+    
+    margin: 0px auto 40px auto;
+    border: 1px solid var(--black-brown);
+    /* position: relative; */
+  }
+
+  .par {
+    display: flex;
+    position: relative;
+  }
+
+  .par img {
+    width: 62%;
+  }
+
+  .carousel-main-img {
+    object-fit: contain;
+  }
+
+  .sub {
+    position: absolute;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80% 20%; */
+    /* z-index: 100; */
+    /* display: flex; */
+    width: 56%;
+    right: 0px;
+    height: 100%;
+    background-color: white;
+    clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 15% 100%);
+  }
+
+  .sub h2 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-decoration: underline;
+  }
+
+  .info {
+    position: absolute;
+    /* display: flex;
+    flex-direction: column; */
+    /* grid-row: 1; */
+    top: 0px;
+    right: 60px;
+    width: 60%;
+  }
+
+  .info p {
+    font-size: 0.86rem;
+  }
+
+  .cooking-info-carousel {
+    display: flex;
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+    border-top: 1px solid var(--dark-brown);
+    grid-row: 2;
+    width: 70%;
+    min-width: 200px;
+    justify-self: end;
+    justify-content: space-evenly;
+  }
+
+  .cooking-info-carousel div {
+    display: flex;
+    align-items: center;
+  }
+
+  .cooking-info-carousel p {
+    padding-left: 10px;
+    font-size: 1rem;
+  }
+
+  .carousel-buttons {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .carousel-buttons button {
+    width: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.65);
+    font-size: 3rem;
+    border: none;
+    cursor: pointer;
+    max-height: 90px;
+  }
+
+  .dots-container {
+    display: flex;
+    width: 8%;
+    margin: 0px auto 40px auto;
+    justify-content: space-between;
+  }
 
   /* .dots-container span {
     display: block;
@@ -1170,9 +1174,12 @@ p {
     content: counter(p);
     display: inline-block;
     width: 1rem;
-    margin-left: -1rem;
     font-weight: bold;
     color: var(--black-brown);
+    margin-left: -1.5em;
+    margin-right: 0.5em; 
+    text-align: right; 
+    direction: rtl;
   }
 
   #good-luck {
