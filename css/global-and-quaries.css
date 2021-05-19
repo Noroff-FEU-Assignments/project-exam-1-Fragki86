@@ -725,9 +725,9 @@ p {
     flex-direction: column;
     align-items: center;
     right: 0;
-    top: 151px;
+    top: 152px;
     width: 100%;
-    height: 470px;
+    height: 480px;
     justify-content: space-evenly;
     background-color: white;
     border-bottom: 1px solid var(--dark-brown);
