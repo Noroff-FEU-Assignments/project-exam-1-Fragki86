@@ -732,7 +732,7 @@ p {
     background-color: white;
     border-bottom: 1px solid var(--dark-brown);
     transform: translateY(-102%);
-    transition: transform 0.5s ease-in;
+    transition: transform 0.3s ease-in;
     z-index: -1;
   }
 
