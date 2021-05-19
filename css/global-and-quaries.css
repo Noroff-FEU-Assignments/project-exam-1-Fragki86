@@ -298,7 +298,11 @@ p {
 }
 
 .favorite-recipes img {
+  display: block;
   width: 100%;
+  max-width: 450px;
+  margin: 0px auto;
+
 }
 
 #dailyTips {
@@ -575,7 +579,7 @@ p {
 
 .rel-h3 h3 {
   margin: 0.5rem auto 3rem auto;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .td-1 {
@@ -1218,7 +1222,7 @@ p {
   .favorite-recipes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 15px;
+    column-gap: 60px;
     width: 80%;
     margin: 0px auto;
   }
@@ -1556,12 +1560,6 @@ p {
 
   .method p::before {
     font-size: 1.2rem;
-  }
-
-
-  .related-courses,
-  .favorite-recipes {
-    column-gap: 60px;
   }
 
   .rel-h3 h3 {
