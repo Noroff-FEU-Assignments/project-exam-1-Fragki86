@@ -646,6 +646,7 @@ p {
   height: 14rem;
   border: 1px solid var(--dark-brown);
   border-radius: 5px;
+  resize: none;
 }
 
 #contact-form span {
@@ -656,6 +657,7 @@ p {
   display: none;
   font-size: 0.6rem;
   color: rgb(211, 27, 27);
+  font-family: var(--paragraph);
 }
 
 /* About us
@@ -1568,4 +1570,24 @@ p {
   }
 
 
+
+
+  /* Contact Page
+------------------------------- */
+  #contact-form label {
+    font-size: 1.3rem;
+  }
+
+  #contact-form input:hover,
+  textarea:hover {
+    box-shadow: 0px 0px 2px inset;
+  }
+
+  #contact-form span {
+    font-size: 1rem;
+  }
+
+  .form-error {
+    font-size: 0.8rem;
+  }
 }
