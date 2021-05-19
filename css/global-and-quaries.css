@@ -839,7 +839,7 @@ p {
   }
 
   .par img {
-    width: 10%;
+    width: 62%;
   }
 
   .carousel-main-img {
@@ -848,10 +848,11 @@ p {
   }
 
   .sub {
-    position: absolute;
+    /* position: absolute; */
     /* display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 80% 20%; */
+    z-index: 100;
     width: 56%;
     right: 0px;
     height: 100%;
