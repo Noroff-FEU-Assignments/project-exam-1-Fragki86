@@ -865,98 +865,7 @@ nav {
 
 
 
-.carousel-container {
-    width: 90%;
-    display: grid;
-    flex-direction: row;
-    margin: 0px auto 10px auto;
-    /* border-top: 1px solid var(--black-brown); */
-    border-bottom: 1px solid var(--black-brown);
-    position: relative;
-}
 
-.par {
-    display: flex;
-    position: relative;
-
-}
-
-.par img {
-    width: 62%;
-}
-
-.carousel-main-img {
-    object-fit: contain;
-    min-height: 100%;
-}
-
-.sub {
-    position: absolute;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 80% 20%;
-    width: 56%;
-    right: 0px;
-    height: 100%;
-    background-color: white;
-    clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 15% 100%);
-}
-
-.sub h2 {
-    font-weight: 500;
-    font-size: 1.25rem;
-    text-decoration: underline 1px;   
-    margin: 10px auto;
-}
-
-.info {
-    width: 80%;
-    margin: 2px auto;
-}
-
-.info p {
-    width: 95%;
-    margin: 2px auto;
-}
-
-.cooking-info-carousel {
-    display: flex;
-    width: 80%;
-    margin: 5px auto;
-    justify-self: end;
-    justify-content: space-evenly;
-}
-
-.cooking-info-carousel div {
-    display: flex;
-    align-items: center;
-}
-
-.cooking-info-carousel p {
-    font-family: var(--paragraph);
-    color: var(--black-brown);
-    padding-left: 5px;
-    font-size: 1rem;
-}
-
-.carousel-buttons {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 1;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.carousel-buttons button {
-    width: 1.8rem;
-    font-size: 2rem;
-    height: 100px;
-    border: none;   
-    background-color: white;
-    padding: 0px 0px;
-}
 
 
 
@@ -964,7 +873,7 @@ nav {
 
 /* Carousel 
 ------------------------------- */
-/* .carousel-container {
+.carousel-container {
     width: 90%;
     margin: 0px auto 40px auto;
     border: 1px solid var(--black-brown);
@@ -1067,7 +976,7 @@ nav {
     width: 8%;
     margin: 0px auto 40px auto;
     justify-content: space-between;
-} */
+}
 
 /* .dots-container span {
     display: block;
@@ -1079,7 +988,7 @@ nav {
 
 .active-dot {
     background-color: var(--dark-brown);
-} */
+}
 
 
 
