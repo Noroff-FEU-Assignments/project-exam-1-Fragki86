@@ -1,6 +1,7 @@
 const burgerBtn = document.querySelector(".mobile-menu");
 const navMobile = document.querySelector(".nav-links");
 const navList = document.querySelectorAll(".nav-links li");
+const h2 = document.querySelector("#latestRecipes h2");
 
 burgerBtn.addEventListener ("click", fadeInMenu);
 burgerBtn.addEventListener ("click", stylishLinks);
@@ -19,3 +20,4 @@ function stylishLinks() {
 
     })
 } 
+
