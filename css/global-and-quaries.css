@@ -479,14 +479,17 @@ p {
   height: 100%;
   overflow: auto;
   background-color: rgba(56, 36, 29, 0.97);
+  animation: zoom-in;
+  animation-duration: 0.8s;
 }
 
 .zoomed-img {
   width: 100%;
   margin: auto;
   display: block;
-  animation: zoom-in;
-  animation-duration: 0.7s;
+  /* animation: zoom-in;
+  animation-duration: 0.7s; */
+  /* transform: translate(-50%, -50%); */
 }
 
 .recipe-info {
