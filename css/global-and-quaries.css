@@ -97,6 +97,7 @@ footer {
   align-items: center;
   justify-content: center;
   color: var(--dark-brown);
+  
 }
 
 .social-media img {
@@ -203,7 +204,7 @@ p {
   position: relative;
 }
 
-.par img {
+.par a {
   width: 100%;
 }
 
@@ -874,9 +875,11 @@ p {
     position: relative;
   }
 
-  .par img {
+  .par a {
     width: 62%;
   }
+
+  
 
   .carousel-main-img {
     object-fit: contain;
