@@ -7,7 +7,6 @@ const activeDot = document.querySelector(".active-dot");
 let offset = 12;
 
 
-
 async function getCarousel() {
     try {
         const response = await fetch(carouselAPI + offset);
