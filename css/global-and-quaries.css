@@ -866,7 +866,7 @@ header {
 ------------------------------- */
   .carousel-container {
     display: block;
-    width: 90%;
+    width: 85%;
     margin: 0px auto 10px auto;
     border: 1px solid var(--black-brown);
   }
@@ -1556,7 +1556,7 @@ header {
 
 
 
-  
+
   /* Contact Page
 ------------------------------- */
   #contact-form label {
