@@ -32,6 +32,7 @@ body a {
   padding-top: 20px;
 }
 
+
 /* Header 
 ------------------------------- */
 header {
@@ -503,12 +504,6 @@ p {
   width: 100%;
 }
 
-/* .ingredients-table {
-    width: 100%;
-    margin: 0px auto;
-    padding-left: 40px;
-} */
-
 .ingredients-u-list {
   display: list-item;
   list-style-position: inside;
@@ -523,13 +518,6 @@ p {
   font-weight: bold;
   color: var(--black-brown);
 }
-
-/* .ingredients-table td{
-    font-family: var(--paragraph);
-    margin: 0px;
-    color: var(--black-brown);
-    
-} */
 
 #method-mobile {
   list-style-type: decimal;
@@ -610,6 +598,8 @@ p {
   font-family: var(--paragraph);
 }
 
+
+
 /* Contact Page
 ------------------------------- */
 #success-message {
@@ -682,24 +672,25 @@ p {
   font-family: var(--paragraph);
 }
 
+
+
 /* About us
 ------------------------------- */
 #about {
   width: 80%;
   margin: 0px auto;
-  /* position: relative; */
 }
 
 #about img {
   display: block;
   margin: 30px auto;
   width: 40%;
-  /* clip-path: circle(160px at center); */
 }
 
 .text p {
   padding-left: 10px;
 }
+
 
 
  /* Header 
@@ -726,10 +717,12 @@ header {
 
 
 
-/* NAV 
-------------------------------- */
 
-/* 768 */
+
+
+
+
+
 /* --------------------------- Mobile  Styles --------------------------- */
 @media only screen and (max-width: 964px) {
   /* No Show 
@@ -743,6 +736,10 @@ header {
   }
   /*------------------------------*/
 
+
+
+  /* NAV 
+------------------------------- */
   nav {
     width: 100%;
     animation-name: fade-in;
@@ -787,13 +784,10 @@ header {
   }
 }
 
-/* --------------------------- Tablet Styles ---------------------------  */
-/* @media only screen and (min-width:769px) and (max-width:1449px) {
 
 
-} */
 
-/*769 - 1023 //1449    and (max-width: 1600px)*/
+
 /* --------------------------- Tablet Styles ---------------------------  */
 @media only screen and (min-width: 965px)  {
   /* No Show 
@@ -818,6 +812,9 @@ header {
   }
 
 
+
+  /* NAV
+------------------------------- */
   nav {
     width: 100%;
     animation-name: fade-in;
@@ -860,6 +857,7 @@ header {
   .current {
     font-weight: 600;
   }
+
 
 
 
@@ -969,6 +967,7 @@ header {
 
 
 
+
 /* Footer 
 ------------------------------- */
   .footer-container {
@@ -1047,14 +1046,11 @@ header {
     margin: 0px auto;
   }
 
-  /* .wonderings p {
-    width: 90%;
-} */
-
   .cooking-tips h3,
   .wonderings h3 {
     text-decoration: underline;
   }
+
 
 
 
@@ -1114,10 +1110,6 @@ header {
     width: 95%;
   }
 
-  /* .details-img {
-    min-width: 500px;
-} */
-
   .bigger-img {
     display: none;
     position: fixed;
@@ -1146,7 +1138,6 @@ header {
 
   .recipe-info .cooking-info {
     border: none;
-    /* padding-top: 70px; */
   }
 
   .method-ingre-grid {
@@ -1328,7 +1319,6 @@ header {
   .tabs {
     display: none;
   }
-
   /* -------------------------------- */
 
 
@@ -1439,33 +1429,19 @@ header {
 
 
 
+
   /* Carousel 
 ------------------------------- */
   .carousel-container {
     width: 80%;
-
-    /* position: relative; */
   }
-
-  /* .par {
-    display: flex;
-    position: relative;
-  } */
 
   .par img {
     width: 65%;
   }
 
-  /* .carousel-main-img {
-    object-fit: contain;
-    min-height: 100%;
-  } */
-
   .sub {
     position: absolute;
-    /* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 80% 20%; */
     right: 0px;
     width: 51%;
     height: 100%;
@@ -1479,7 +1455,6 @@ header {
   }
 
   .info {
-    /* position: absolute; */
     position: relative;
     left: 90px;
     top: 50px;
@@ -1495,47 +1470,10 @@ header {
     font-size: 1.1rem;
   }
 
-  /* .cooking-info-carousel {
-    display: flex;
-    position: relative;
-    left: 80px;
-    bottom: 140px;
-    border-top: 1px solid var(--dark-brown);
-    grid-row: 2;
-    width: 60%;
-    justify-self: end;
-    justify-content: space-evenly;
-  } */
-
-  /* .cooking-info-carousel div {
-    display: flex;
-    align-items: center;
-  } */
-
   .cooking-info-carousel p {
     padding-left: 10px;
     font-size: 1.1rem;
   }
-
-  /* .carousel-buttons {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 1;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 8rem;
-  } */
-
-  /* .carousel-buttons button {
-    width: 2.5rem;
-    background-color: rgba(255, 255, 255, 0.65);
-    font-size: 3rem;
-    border: none;
-    cursor: pointer;
-    max-height: 90px;
-  } */
 
   #prev-slide:hover {
     background-color: rgba(255, 255, 255, 1);
@@ -1579,7 +1517,6 @@ header {
       font-size: 1.6rem;
   }
 
-
   .individual-container {
     transition: box-shadow 0.2s;
 
@@ -1591,18 +1528,12 @@ header {
 
 
 
+
   /* Details Page
 ------------------------------- */
-
   .img-info-grid {
     width: 80%;
   }
-
-
-  /* .details-img {
-    min-width: 730px;
-} */
-
 
   .recipe-info .cooking-info {
     padding-top: 70px;
@@ -1625,6 +1556,7 @@ header {
 
 
 
+  
   /* Contact Page
 ------------------------------- */
   #contact-form label {
