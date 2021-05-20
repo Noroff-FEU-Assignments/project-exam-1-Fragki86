@@ -866,7 +866,7 @@ header {
 ------------------------------- */
   .carousel-container {
     display: block;
-    width: 85%;
+    width: 80%;
     margin: 0px auto 10px auto;
     border: 1px solid var(--black-brown);
   }
