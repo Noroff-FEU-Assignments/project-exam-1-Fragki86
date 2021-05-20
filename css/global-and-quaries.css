@@ -819,7 +819,7 @@ nav {
  
 
   .logo-m {
-    padding-left: 55px;
+    padding-left: 50px;
   }
 
 
@@ -828,7 +828,7 @@ nav {
   .carousel-container {
     display: block;
     width: 90%;
-    margin: 0px auto 40px auto;
+    margin: 0px auto 0px auto;
     border: 1px solid var(--black-brown);
   }
 
