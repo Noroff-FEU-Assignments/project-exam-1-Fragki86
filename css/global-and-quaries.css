@@ -180,12 +180,16 @@ footer p {
   font-size: 0.8rem;
 }
 
+
+
 /* Button adjustments 
 ------------------------------- */
 .btn-style {
   width: 40%;
   font-size: 1.1rem;
 }
+
+
 
 /* Titles & paragraphs 
 ------------------------------- */
@@ -261,6 +265,10 @@ p {
 .info p {
   width: 95%;
   margin: 2px auto;
+}
+
+.info h2 {
+  text-decoration: underline;
 }
 
 .cooking-info-carousel {
