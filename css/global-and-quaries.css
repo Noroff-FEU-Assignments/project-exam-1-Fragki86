@@ -875,11 +875,13 @@ p {
     position: relative;
   }
 
-  .par a {
+  .par img {
     width: 62%;
   }
 
-  
+  .par a {
+    width: 62%;
+  }
 
   .carousel-main-img {
     object-fit: contain;
