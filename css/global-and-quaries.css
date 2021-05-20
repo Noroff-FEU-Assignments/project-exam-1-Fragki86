@@ -1399,7 +1399,7 @@ header {
     margin: 0px auto;
     animation: none;
     padding: 1px 0px;
-    border-bottom: 1px solid var(--dark-brown)
+    border-bottom: 1px solid var(--dark-brown);
   }
 
   .nav-links {
@@ -1416,8 +1416,8 @@ header {
     z-index: 1;
   }
 
-  .nav-visible {
-    transform: none;
+  .nav-links li {
+    opacity: 1;
   }
 
   .nav-links a,
