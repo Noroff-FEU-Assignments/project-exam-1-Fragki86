@@ -822,6 +822,9 @@ nav {
     padding-left: 50px;
   }
 
+  #latestRecipes h2 {
+    display: none;
+  }
 
   /* Carousel 
 ------------------------------- */
