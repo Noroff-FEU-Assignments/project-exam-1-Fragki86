@@ -1352,7 +1352,7 @@ header {
 
 
 /* --------------------------- Desktop Styles --------------------------- */
-@media only screen and (min-width: 1601px) {
+@media only screen and (min-width: 1300px) {
   /* No Show 
 ------------------------------- */
   .logo-m {
