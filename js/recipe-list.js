@@ -12,7 +12,7 @@ async function getRecipes() {
         recipeContainer.innerHTML = "";
 
         for (let i = 0; i < recipes.length; i++) {
-            console.log(recipes[i])
+            // console.log(recipes[i])
             if (i===6) {
                 break
             } 
