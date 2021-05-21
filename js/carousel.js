@@ -12,7 +12,7 @@ async function getCarousel() {
     try {
         const response = await fetch(carouselAPI + offset);
         const carouselRecipe = await response.json();
-        console.log(carouselRecipe)
+        // console.log(carouselRecipe)
         carousel.innerHTML = "";
 
         carouselRecipe.forEach(function(carInfo) {

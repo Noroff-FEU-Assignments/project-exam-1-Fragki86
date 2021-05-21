@@ -6,7 +6,7 @@ async function getFavorite() {
     try {
         const response = await fetch(callAPI);
         const recipesExtra = await response.json();
-        console.log(recipesExtra)
+        // console.log(recipesExtra)
         favoriteRecipesContainer.innerHTML = "";
 
         // randomJoke(arr) {

@@ -6,7 +6,7 @@ async function getRelated() {
     try {
         const response = await fetch(callAPI);
         const recipesExtra = await response.json();
-        console.log(recipesExtra)
+        // console.log(recipesExtra)
         relatedRecipesContainer.innerHTML = "";
         
         recipesExtra.forEach(function(recipeInfo) {
