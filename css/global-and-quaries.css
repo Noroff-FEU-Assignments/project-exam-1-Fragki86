@@ -374,7 +374,7 @@ p {
 .cooking-tips h3,
 .wonderings h3 {
   text-align: left;
-  text-decoration: underline 1px;
+  text-decoration: underline;
   margin-bottom: 0px;
 }
 
